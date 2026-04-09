@@ -1,0 +1,149 @@
+/* ====== AI 实用指南 — 自定义样式 ====== */
+
+/* ---------- 全局字体 & 排版 ---------- */
+:root {
+  --md-text-font: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --md-code-font: "JetBrains Mono", "Fira Code", "Cascadia Code", monospace;
+}
+
+/* 正文最大宽度、行距 */
+.md-content {
+  max-width: 52rem;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* 段落间距 */
+.md-typeset p {
+  margin-bottom: 1em;
+}
+
+/* ---------- 标题样式 ---------- */
+.md-typeset h1 {
+  font-weight: 700;
+  border-bottom: 2px solid var(--md-primary-fg-color);
+  padding-bottom: 0.3em;
+  margin-bottom: 1em;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  padding-bottom: 0.2em;
+  margin-top: 2em;
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+  margin-top: 1.5em;
+}
+
+/* ---------- 表格美化 ---------- */
+.md-typeset table:not([class]) {
+  font-size: 0.82rem;
+  border-collapse: collapse;
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.md-typeset table:not([class]) td {
+  vertical-align: top;
+}
+
+.md-typeset table:not([class]) tbody tr:nth-child(even) {
+  background-color: var(--md-default-fg-color--lightest);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tbody tr:nth-child(even) {
+  background-color: hsla(var(--md-hue), 15%, 18%, 1);
+}
+
+/* ---------- 引用块（blockquote）---------- */
+.md-typeset blockquote {
+  border-left: 4px solid var(--md-accent-fg-color);
+  background: var(--md-default-fg-color--lightest);
+  padding: 0.8em 1.2em;
+  border-radius: 0 6px 6px 0;
+}
+
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  background: hsla(var(--md-hue), 15%, 16%, 1);
+}
+
+/* ---------- 代码块 ---------- */
+.md-typeset pre > code {
+  border-radius: 8px;
+}
+
+.md-typeset code {
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+/* ---------- 章节元数据（关键词、难度等）---------- */
+.md-typeset > blockquote:first-of-type {
+  border-left-color: var(--md-primary-fg-color);
+  background: linear-gradient(135deg, 
+    hsla(var(--md-hue), 70%, 95%, 0.5),
+    hsla(var(--md-hue), 40%, 98%, 0.5));
+  border-radius: 0 10px 10px 0;
+  padding: 1em 1.5em;
+}
+
+[data-md-color-scheme="slate"] .md-typeset > blockquote:first-of-type {
+  background: linear-gradient(135deg, 
+    hsla(var(--md-hue), 30%, 18%, 0.8),
+    hsla(var(--md-hue), 20%, 14%, 0.8));
+}
+
+/* ---------- 脚注 ---------- */
+.md-typeset .footnote {
+  font-size: 0.82rem;
+}
+
+/* ---------- 导航栏 Tab 样式 ---------- */
+.md-tabs {
+  background-color: var(--md-primary-fg-color);
+}
+
+/* ---------- 打印优化 ---------- */
+@media print {
+  .md-sidebar,
+  .md-tabs,
+  .md-header,
+  .md-footer {
+    display: none !important;
+  }
+  .md-content {
+    max-width: 100%;
+  }
+  .md-typeset h1 {
+    page-break-before: always;
+  }
+  .md-typeset h1:first-of-type {
+    page-break-before: avoid;
+  }
+  .md-typeset table {
+    font-size: 9pt;
+  }
+  .md-typeset pre > code {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+}
+
+/* ---------- 响应式微调 ---------- */
+@media screen and (max-width: 76.25em) {
+  .md-content {
+    max-width: 100%;
+  }
+}

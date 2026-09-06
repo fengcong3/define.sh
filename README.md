@@ -7,7 +7,7 @@
 Plain semantic HTML and one CSS file. No application JavaScript, framework, build step, package installation, external font request, analytics, or icon library is needed for the redesigned pages. Native anchors and `<details>` keep navigation and the publication archive usable without JavaScript. The separate, existing MkDocs guide at `/AI/` keeps its own assets and runtime.
 
 - `index.html`: biography, research, publications, software, career, notes, contact and Person structured data.
-- `assets/css/style.css`: responsive layout, focus states and print styles.
+- `assets/css/style.css`: responsive layout, a fluid 17–22px reading scale, focus states and print styles. The content width grows to 1600px for large displays; the hero uses the original photograph without decorative overlays.
 - `assets/images/my-avatar.png`: original portrait, reused without alteration.
 - `assets/images/favicon.svg`: small typographic favicon; `logo.ico` remains the fallback.
 - `cv/index.html`: accessible wrapper around the unchanged archived PDF files.
@@ -27,7 +27,7 @@ Then open `http://127.0.0.1:8000/`. Asset paths start at `/` to support the cust
 
 ## Editing content
 
-Edit `index.html` directly. Publications are static, crawlable HTML: the three selected entries are followed by four further publications in a native disclosure. Preserve author ordering, DOI links, and collaborator credits when editing. Update visible biographical text and JSON-LD together. Keep the SVG in the hero decorative: it is a schematic motif, not research data.
+Edit `index.html` directly. Publications are static, crawlable HTML: the three selected entries are followed by four further publications in a native disclosure. Preserve author ordering, DOI links, and collaborator credits when editing. Update visible biographical text and JSON-LD together.
 
 Facts were retained from the previous homepage, the companion profile and the PDFs already in `cv/`. The HKU appointment (Research Assistant, late January 2026–present) was supplied by the owner. The exact end date of the preceding CAAS appointment was not supplied, so that entry shows its known start date and identifies it as a previous appointment. AI/agentic science is presented as an interest, without implying published results or a specific HKU project.
 

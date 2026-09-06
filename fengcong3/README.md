@@ -2,16 +2,16 @@
 
 <div align="center">
   <img src="images/my-avatar.png" alt="Cong Feng" width="150" style="border-radius: 50%;" />
-  <h3>Bioinformatics Engineer</h3>
+  <h3>Research Assistant · The University of Hong Kong</h3>
 </div>
 
 ## 关于我 | About Me
 
-我在中国农业科学院农业基因组研究所担任生物信息学工程师已有6年，专注于基因组学和群体遗传学领域。我的核心工作包括开发生物信息学分析工具、进行小麦/豌豆的群体遗传分析以及基因挖掘。
+自 2026 年 1 月下旬起，我在香港大学担任研究助理。此前在中国农业科学院农业基因组研究所从事生物信息学与群体遗传学研究，工作包括开发分析工具、小麦与豌豆的群体遗传分析及基因挖掘。我的研究兴趣正从基因组学与遗传学延伸到计算生物学、AI for Biology 和 Agentic Science。
 
 擅长开发生物信息分析工具、工作流程和搭建专业化网站。热爱为开源社区和技术社区贡献知识和经验。对于复杂任务，我有着设计创新解决方案的天赋，并且一直在学习和实践新技术与工具。
 
-*As a Bioinformatics Engineer at the Agricultural Genomics Institute, Chinese Academy of Agricultural Sciences for 6 years, I've immersed myself in the realms of genomics and population genetics. My pivotal roles have spanned from the development of bioinformatics tools, conducting population genetic analyses on wheat/pea, to gene mining.*
+*I have been a Research Assistant at The University of Hong Kong since late January 2026. Previously, I worked in bioinformatics and population genetics at the Agricultural Genomics Institute, Chinese Academy of Agricultural Sciences, developing analysis tools and studying wheat and pea genetics. My interests are expanding into computational biology, AI for biology and agentic scientific systems.*
 
 *Proficient in crafting bioinformatics analysis tools, workflows, and setting up specialized websites. Love to contribute to open sources and tech communities by sharing knowledge and experience. I have an innate interest in devising innovative problem‑solving methodologies for intricate tasks and am always on the hunt to learn and implement new technologies and tools.*
 
@@ -41,9 +41,9 @@
     </td>
     <td align="center" width="50%">
       <img src="images/tools3.svg" width="40" height="40" alt="AI Icon"><br />
-      <strong>农业AI应用</strong><br />
-      <p>利用人工智能增强农业研究、基因挖掘和设计育种。</p>
-      <p><i>Leveraging artificial intelligence to enhance agricultural research, gene mining, and design breeding.</i></p>
+      <strong>AI for Biology · 探索方向</strong><br />
+      <p>探索 AI 辅助生物学研究与智能体科学系统。</p>
+      <p><i>Exploring AI-enabled biological research and agentic scientific systems.</i></p>
     </td>
   </tr>
 </table>
@@ -66,10 +66,11 @@
 
 - 📧 **Email**: [define@define.sh](mailto:define@define.sh)
 - 🔗 **GitHub**: [fengcong3](https://github.com/fengcong3)
-- 📍 **Location**: Shenzhen, China
+- 🏛️ **Current affiliation**: The University of Hong Kong
+- 🌐 **Research website**: [define.sh](https://define.sh/)
 
 ---
 
 <div align="center">
-  <sub>Copyright © 2023-2025 made with ❤️ by Cong Feng</sub>
+  <sub>Copyright © 2023-2026 Cong Feng</sub>
 </div>

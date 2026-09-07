@@ -1,14 +1,54 @@
 <svg xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="pod-fill" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b8d788"/><stop offset="1" stop-color="#446e3e"/></linearGradient>
-    <linearGradient id="pea-fill" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e7f0b4"/><stop offset="1" stop-color="#8ead56"/></linearGradient>
+    <linearGradient id="pea-shell" gradientUnits="userSpaceOnUse" x1="314" y1="173" x2="314" y2="319">
+      <stop stop-color="#a7bf71"/><stop offset=".5" stop-color="#789c53"/><stop offset="1" stop-color="#487340"/>
+    </linearGradient>
+    <linearGradient id="pea-lining" gradientUnits="userSpaceOnUse" x1="308" y1="220" x2="324" y2="306">
+      <stop stop-color="#a9bf70"/><stop offset=".45" stop-color="#dbe5ac"/><stop offset="1" stop-color="#a7c178"/>
+    </linearGradient>
+    <radialGradient id="pea-round" cx=".32" cy=".26" r=".78">
+      <stop stop-color="#e2ecac"/><stop offset=".45" stop-color="#b9d07b"/><stop offset=".82" stop-color="#91b35d"/><stop offset="1" stop-color="#71964a"/>
+    </radialGradient>
+    <linearGradient id="pea-leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#a5bd78"/><stop offset="1" stop-color="#527a48"/>
+    </linearGradient>
     <symbol id="pea" viewBox="0 0 640 480">
-      <path d="M344 51q-1 55-43 101" fill="none" stroke="#516b43" stroke-width="7"/>
-      <path d="M329 95Q248 24 201 64Q228 118 329 95M326 105Q360 51 414 72Q405 128 326 105" fill="#6e8e51"/>
-      <path d="M300 126C153 164 126 323 153 405C271 430 424 263 399 146Q356 109 300 126" fill="url(#pod-fill)" stroke="#405d38" stroke-width="4"/>
-      <path d="M372 144C252 157 179 322 164 392C247 386 377 277 384 177Z" fill="#e1e8b4"/>
-      <g fill="url(#pea-fill)" stroke="#698c43" stroke-width="2"><circle cx="336" cy="178" r="30"/><circle cx="292" cy="220" r="33"/><circle cx="251" cy="264" r="32"/><circle cx="214" cy="311" r="29"/><circle cx="184" cy="355" r="23"/></g>
-      <path d="M303 132q-38-43-55-3" fill="none" stroke="#6e8e51" stroke-width="4"/>
+      <g transform="rotate(-25 320 250)" stroke-linecap="round" stroke-linejoin="round">
+        <!-- The opened upper valve and its delicate longitudinal veins. -->
+        <path d="M77 283C145 221 232 173 321 173C414 172 504 194 550 222C492 214 468 231 417 251C311 293 170 308 77 283Z" fill="url(#pea-shell)" stroke="#547a45" stroke-width="2.5"/>
+        <path d="M89 279C167 220 249 185 329 185C411 184 491 203 536 220" fill="none" stroke="#d5df9d" stroke-width="3" opacity=".75"/>
+        <g fill="none" stroke="#d5df9d" stroke-width="1.4" opacity=".42">
+          <path d="M169 238Q205 216 238 211M225 215Q256 197 286 193M282 201Q313 186 341 186M342 197Q370 188 397 192M401 204Q428 197 452 205M459 212Q480 211 499 215"/>
+        </g>
+        <!-- The lower valve forms a narrow, tapered cradle around the peas. -->
+        <path d="M77 283C193 232 370 201 489 213C517 216 536 218 550 222C505 267 390 312 274 317C186 321 117 299 77 283Z" fill="url(#pea-shell)" stroke="#547a45" stroke-width="2.5"/>
+        <path d="M91 282C207 235 375 213 486 222L536 224C473 265 368 296 265 302C191 305 127 292 91 282Z" fill="url(#pea-lining)"/>
+        <path d="M96 282C197 308 373 303 533 228" fill="none" stroke="#e0e8b4" stroke-width="3.5"/>
+        <g fill="#55783b" opacity=".2">
+          <ellipse cx="144" cy="284" rx="22" ry="10"/><ellipse cx="197" cy="278" rx="28" ry="12"/>
+          <ellipse cx="254" cy="268" rx="31" ry="13"/><ellipse cx="316" cy="258" rx="33" ry="14"/>
+          <ellipse cx="379" cy="250" rx="32" ry="13"/><ellipse cx="440" cy="245" rx="29" ry="12"/>
+          <ellipse cx="493" cy="237" rx="23" ry="10"/>
+        </g>
+        <!-- Seven round seeds follow the natural curve of the pod. -->
+        <g fill="url(#pea-round)" stroke="#7c9e4e" stroke-width="1.4">
+          <circle cx="141" cy="274" r="20"/><circle cx="193" cy="261" r="25"/>
+          <circle cx="251" cy="249" r="28"/><circle cx="313" cy="239" r="30"/>
+          <circle cx="376" cy="231" r="29"/><circle cx="437" cy="226" r="26"/>
+          <circle cx="492" cy="225" r="21"/>
+        </g>
+        <g fill="none" stroke="#f3f5d1" stroke-width="2.5" opacity=".42">
+          <path d="M130 269Q133 261 141 260M179 253Q183 243 194 242M235 241Q240 229 252 228M296 230Q301 217 314 216M360 222Q365 210 377 209M423 218Q427 207 438 207M480 219Q484 211 492 210"/>
+        </g>
+        <path d="M77 283Q69 285 62 279" fill="none" stroke="#668849" stroke-width="3"/>
+        <!-- A small calyx, paired leaves and the characteristic curling tendril. -->
+        <path d="M544 222C560 208 573 200 577 178" fill="none" stroke="#66884e" stroke-width="6"/>
+        <path d="M544 222 533 208 550 214 560 200 561 217 576 211 566 227 550 231Z" fill="#62864b"/>
+        <path d="M576 182C551 177 526 156 532 137C557 135 578 158 576 182Z" fill="url(#pea-leaf)"/>
+        <path d="M578 179C576 158 592 137 615 137C616 159 599 177 578 179Z" fill="url(#pea-leaf)"/>
+        <path d="M541 147Q560 160 575 181M605 146Q590 158 578 179" fill="none" stroke="#c3d59a" stroke-width="1.5" opacity=".65"/>
+        <path d="M573 183C550 174 551 150 552 133C554 109 531 109 525 124C518 143 541 149 546 133" fill="none" stroke="#7b9b58" stroke-width="2.5"/>
+      </g>
     </symbol>
     <symbol id="wheat" viewBox="0 0 640 480">
       <g fill="none" stroke="#ac8950" stroke-width="5" stroke-linecap="round"><path d="M317 440 321 128M302 439 204 205M334 438 425 179"/></g>

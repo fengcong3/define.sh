@@ -50,16 +50,82 @@
         <path d="M573 183C550 174 551 150 552 133C554 109 531 109 525 124C518 143 541 149 546 133" fill="none" stroke="#7b9b58" stroke-width="2.5"/>
       </g>
     </symbol>
+    <linearGradient id="wheat-gold" x1="0" y1="0" x2="1" y2=".8">
+      <stop stop-color="#f2da9c"/><stop offset=".45" stop-color="#dfba6d"/><stop offset="1" stop-color="#b88a40"/>
+    </linearGradient>
+    <linearGradient id="wheat-blade" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#b5b57b"/><stop offset=".5" stop-color="#8b995f"/><stop offset="1" stop-color="#657d50"/>
+    </linearGradient>
+    <g id="wheat-spikelet" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-1 30C-18 29-34 15-31-6C-14-3-1 11-1 30Z" fill="url(#wheat-gold)" stroke="#ac8140" stroke-width="1.15"/>
+      <path d="M-27 0Q-24 16-5 27" fill="none" stroke="#fff0bf" stroke-width="1.5" opacity=".65"/>
+      <path d="M-25 0Q-12 13-4 27" fill="none" stroke="#b18a46" stroke-width="1" opacity=".6"/>
+      <path d="M-17 23Q-9 27-1 30" fill="none" stroke="#966d35" stroke-width=".8" opacity=".35"/>
+    </g>
+    <path id="wheat-awn" d="M-31-6Q-37-27-40-47" fill="none" stroke="#b29659" stroke-width="1.15" stroke-linecap="round"/>
+    <g id="wheat-ear" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Awns sit behind the tightly overlapping spikelets. -->
+      <g opacity=".85"><use href="#wheat-awn" transform="translate(0 20) scale(0.55)"/>
+        <use href="#wheat-awn" transform="translate(0 23) scale(-0.55 0.55)"/>
+        <use href="#wheat-awn" transform="translate(0 44) scale(0.76)"/>
+        <use href="#wheat-awn" transform="translate(0 47) scale(-0.76 0.76)"/>
+        <use href="#wheat-awn" transform="translate(0 68) scale(0.94)"/>
+        <use href="#wheat-awn" transform="translate(0 71) scale(-0.94 0.94)"/>
+        <use href="#wheat-awn" transform="translate(0 94) scale(1.04)"/>
+        <use href="#wheat-awn" transform="translate(0 97) scale(-1.04 1.04)"/>
+        <use href="#wheat-awn" transform="translate(0 120) scale(1)"/>
+        <use href="#wheat-awn" transform="translate(0 123) scale(-1 1)"/>
+        <use href="#wheat-awn" transform="translate(0 146) scale(0.88)"/>
+        <use href="#wheat-awn" transform="translate(0 149) scale(-0.88 0.88)"/>
+        <use href="#wheat-awn" transform="translate(0 171) scale(0.7)"/>
+        <use href="#wheat-awn" transform="translate(0 174) scale(-0.7 0.7)"/></g>
+      <path d="M0-5-1-34" fill="none" stroke="#ac8b4e" stroke-width="1.2"/>
+      <path d="M0 202V20" fill="none" stroke="#b98e46" stroke-width="5"/>
+      <path d="M1 202V22" fill="none" stroke="#e6c882" stroke-width="1.5"/>
+      <path d="M0 32C-13 21-13 4 0-7C13 5 13 22 0 32Z" fill="url(#wheat-gold)" stroke="#ac8140" stroke-width="1.1"/>
+      <path d="M0-1V26" fill="none" stroke="#f9e9b5" stroke-width="1.3"/>
+      <use href="#wheat-spikelet" transform="translate(0 20) scale(0.55)"/>
+        <use href="#wheat-spikelet" transform="translate(0 23) scale(-0.55 0.55)"/>
+        <use href="#wheat-spikelet" transform="translate(0 44) scale(0.76)"/>
+        <use href="#wheat-spikelet" transform="translate(0 47) scale(-0.76 0.76)"/>
+        <use href="#wheat-spikelet" transform="translate(0 68) scale(0.94)"/>
+        <use href="#wheat-spikelet" transform="translate(0 71) scale(-0.94 0.94)"/>
+        <use href="#wheat-spikelet" transform="translate(0 94) scale(1.04)"/>
+        <use href="#wheat-spikelet" transform="translate(0 97) scale(-1.04 1.04)"/>
+        <use href="#wheat-spikelet" transform="translate(0 120) scale(1)"/>
+        <use href="#wheat-spikelet" transform="translate(0 123) scale(-1 1)"/>
+        <use href="#wheat-spikelet" transform="translate(0 146) scale(0.88)"/>
+        <use href="#wheat-spikelet" transform="translate(0 149) scale(-0.88 0.88)"/>
+        <use href="#wheat-spikelet" transform="translate(0 171) scale(0.7)"/>
+        <use href="#wheat-spikelet" transform="translate(0 174) scale(-0.7 0.7)"/>
+      <path d="M-11 195Q-5 203 0 207Q6 203 11 195" fill="none" stroke="#bb964f" stroke-width="2"/>
+    </g>
     <symbol id="wheat" viewBox="0 0 640 480">
-      <g fill="none" stroke="#ac8950" stroke-width="5" stroke-linecap="round"><path d="M317 440 321 128M302 439 204 205M334 438 425 179"/></g>
-      <g fill="#d6b87a" stroke="#ac8950" stroke-width="2">
-        <path d="M320 166Q277 139 291 110Q321 121 320 166M320 198Q273 176 280 144Q316 153 320 198M320 229Q272 211 277 179Q314 186 320 229M320 260Q272 243 276 212Q314 219 320 260M320 290Q274 275 278 244Q313 251 320 290"/>
-        <path d="M323 166Q366 139 352 110Q322 121 323 166M323 198Q370 176 363 144Q327 153 323 198M323 229Q371 211 366 179Q329 186 323 229M323 260Q371 243 367 212Q329 219 323 260M323 290Q369 275 365 244Q330 251 323 290"/>
-        <path d="M321 139Q297 102 321 73Q345 102 321 139"/>
-        <g transform="translate(-35 89) rotate(-26 320 170) scale(.82)"><path d="M320 166Q277 139 291 110Q321 121 320 166M320 207Q273 176 280 144Q316 153 320 207M320 248Q272 211 277 179Q314 186 320 248M320 285Q272 243 276 212Q314 219 320 285M323 166Q366 139 352 110Q322 121 323 166M323 207Q370 176 363 144Q327 153 323 207M323 248Q371 211 366 179Q329 186 323 248M323 285Q371 243 367 212Q329 219 323 285"/></g>
-        <g transform="translate(152 15) rotate(24 320 170) scale(.82)"><path d="M320 166Q277 139 291 110Q321 121 320 166M320 207Q273 176 280 144Q316 153 320 207M320 248Q272 211 277 179Q314 186 320 248M320 285Q272 243 276 212Q314 219 320 285M323 166Q366 139 352 110Q322 121 323 166M323 207Q370 176 363 144Q327 153 323 207M323 248Q371 211 366 179Q329 186 323 248M323 285Q371 243 367 212Q329 219 323 285"/></g>
+      <g stroke-linecap="round" stroke-linejoin="round">
+        <!-- Three stems have slightly different heights and natural inclinations. -->
+        <g fill="none" stroke="#a58d51" stroke-width="4.5">
+          <path d="M309 445C293 388 282 336 259 299"/>
+          <path d="M319 445C314 383 305 321 306 274"/>
+          <path d="M329 445C340 389 356 337 366 291"/>
+        </g>
+        <g fill="none" stroke="#e3cb91" stroke-width="1.3" opacity=".8">
+          <path d="M308 440C292 385 280 333 258 300M318 440C313 380 304 317 305 275M328 440C339 386 355 334 365 292"/>
+        </g>
+        <!-- Long, folded leaf blades balance the warm grain heads. -->
+        <path d="M310 416C284 367 228 331 165 322C225 351 266 401 310 416Z" fill="url(#wheat-blade)"/>
+        <path d="M330 425C356 368 407 327 479 301C435 361 391 411 330 425Z" fill="url(#wheat-blade)"/>
+        <path d="M362 334C383 294 425 262 469 260C423 276 393 314 362 344Z" fill="url(#wheat-blade)"/>
+        <g fill="none" stroke="#d5d2a0" stroke-width="1.5" opacity=".75">
+          <path d="M174 326Q252 364 306 411M336 419Q402 367 470 309M365 338Q415 280 460 263"/>
+        </g>
+        <g fill="none" stroke="#84935d" stroke-width="1.1" opacity=".55">
+          <path d="M189 331Q263 366 304 406M344 419Q404 380 459 324"/>
+        </g>
+        <path d="m291 380 7-2m16-21 7-1m22 23 7 2" fill="none" stroke="#8b7c48" stroke-width="3"/>
+        <use href="#wheat-ear" transform="translate(191 145) rotate(-24) scale(.82)"/>
+        <use href="#wheat-ear" transform="translate(435 119) rotate(22) scale(.9)"/>
+        <use href="#wheat-ear" transform="translate(317 70) rotate(3)"/>
       </g>
-      <path d="M305 431Q213 388 178 327Q263 337 305 431M336 438Q407 346 467 337Q442 403 336 438" fill="#758358"/>
     </symbol>
     <symbol id="dna" viewBox="0 0 640 480">
       <g fill="none" stroke-linecap="round">

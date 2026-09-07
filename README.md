@@ -4,11 +4,13 @@
 
 ## Implementation
 
-Plain semantic HTML and one CSS file. No application JavaScript, framework, build step, package installation, external font request, analytics, or icon library is needed for the redesigned pages. Native anchors and `<details>` keep navigation and the publication archive usable without JavaScript. The separate, existing MkDocs guide at `/AI/` keeps its own assets and runtime.
+Plain semantic HTML, one CSS file and a small optional JavaScript enhancement. No framework, build step, package installation, external font request, analytics, or icon library is needed for the redesigned pages. Native anchors and `<details>` keep navigation and the publication archive usable without JavaScript. The separate, existing MkDocs guide at `/AI/` keeps its own assets and runtime.
 
-- `index.html`: biography, research, publications, software, career, notes, contact and Person structured data.
-- `assets/css/style.css`: responsive layout, a fluid 17–22px reading scale, focus states and print styles. The content width grows to 1600px for large displays; the hero uses the original photograph without decorative overlays.
-- `assets/images/my-avatar.png`: original portrait, reused without alteration.
+- `index.html`: biography, research, publications, software, career, contact and Person structured data.
+- `assets/css/style.css`: responsive layout, a fluid 17–22px reading scale, focus states and print styles. The content width grows to 1600px for large displays. Expansive research chapters pair large headings with original botanical and genomic illustrations.
+- `assets/images/researcher.svg`: original vector researcher with CSS-driven book, laptop, DNA and greeting poses; replaces the homepage photograph.
+- `assets/images/research-visuals.svg`: original pea, wheat, DNA and network illustrations, rendered through SVG symbols.
+- `assets/js/story.js`: a passive scroll listener batches updates through `requestAnimationFrame`. The character moves into the side margin on wide displays or the reserved navigation space on smaller screens. It changes pose by section; reduced-motion preference leaves a static hero illustration.
 - `assets/images/favicon.svg`: small typographic favicon; `logo.ico` remains the fallback.
 - `cv/index.html`: accessible wrapper around the unchanged archived PDF files.
 - `AI/`: existing compiled AI practical guide; preserved as supplied.
@@ -27,7 +29,11 @@ Then open `http://127.0.0.1:8000/`. Asset paths start at `/` to support the cust
 
 ## Editing content
 
-Edit `index.html` directly. Publications are static, crawlable HTML: the three selected entries are followed by four further publications in a native disclosure. Preserve author ordering, DOI links, and collaborator credits when editing. Update visible biographical text and JSON-LD together.
+Edit `index.html` directly. All substantive content remains available without JavaScript; the character is decorative and excluded from the accessibility tree. The haplotype matrix contains explicitly labelled illustrative samples, not research results.
+
+The owner requested removal of the open-notebook section, both blog links, the AI-guide homepage link and the discontinued cloud-disk link. The existing AI guide files and companion GitHub profile remain separate, unchanged resources.
+
+Publications are static, crawlable HTML: the three selected entries are followed by four further publications in a native disclosure. Preserve author ordering, DOI links, and collaborator credits when editing. Update visible biographical text and JSON-LD together.
 
 Facts were retained from the previous homepage, the companion profile and the PDFs already in `cv/`. The HKU appointment (Research Assistant, late January 2026–present) was supplied by the owner. The exact end date of the preceding CAAS appointment was not supplied, so that entry shows its known start date and identifies it as a previous appointment. AI/agentic science is presented as an interest, without implying published results or a specific HKU project.
 

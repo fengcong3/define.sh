@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pod-fill" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b8d788"/><stop offset="1" stop-color="#446e3e"/></linearGradient>
+    <linearGradient id="pea-fill" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e7f0b4"/><stop offset="1" stop-color="#8ead56"/></linearGradient>
+    <symbol id="pea" viewBox="0 0 640 480">
+      <path d="M344 51q-1 55-43 101" fill="none" stroke="#516b43" stroke-width="7"/>
+      <path d="M329 95Q248 24 201 64Q228 118 329 95M326 105Q360 51 414 72Q405 128 326 105" fill="#6e8e51"/>
+      <path d="M300 126C153 164 126 323 153 405C271 430 424 263 399 146Q356 109 300 126" fill="url(#pod-fill)" stroke="#405d38" stroke-width="4"/>
+      <path d="M372 144C252 157 179 322 164 392C247 386 377 277 384 177Z" fill="#e1e8b4"/>
+      <g fill="url(#pea-fill)" stroke="#698c43" stroke-width="2"><circle cx="336" cy="178" r="30"/><circle cx="292" cy="220" r="33"/><circle cx="251" cy="264" r="32"/><circle cx="214" cy="311" r="29"/><circle cx="184" cy="355" r="23"/></g>
+      <path d="M303 132q-38-43-55-3" fill="none" stroke="#6e8e51" stroke-width="4"/>
+    </symbol>
+    <symbol id="wheat" viewBox="0 0 640 480">
+      <g fill="none" stroke="#ac8950" stroke-width="5" stroke-linecap="round"><path d="M317 440 321 128M302 439 204 205M334 438 425 179"/></g>
+      <g fill="#d6b87a" stroke="#ac8950" stroke-width="2">
+        <path d="M320 166Q277 139 291 110Q321 121 320 166M320 198Q273 176 280 144Q316 153 320 198M320 229Q272 211 277 179Q314 186 320 229M320 260Q272 243 276 212Q314 219 320 260M320 290Q274 275 278 244Q313 251 320 290"/>
+        <path d="M323 166Q366 139 352 110Q322 121 323 166M323 198Q370 176 363 144Q327 153 323 198M323 229Q371 211 366 179Q329 186 323 229M323 260Q371 243 367 212Q329 219 323 260M323 290Q369 275 365 244Q330 251 323 290"/>
+        <path d="M321 139Q297 102 321 73Q345 102 321 139"/>
+        <g transform="translate(-35 89) rotate(-26 320 170) scale(.82)"><path d="M320 166Q277 139 291 110Q321 121 320 166M320 207Q273 176 280 144Q316 153 320 207M320 248Q272 211 277 179Q314 186 320 248M320 285Q272 243 276 212Q314 219 320 285M323 166Q366 139 352 110Q322 121 323 166M323 207Q370 176 363 144Q327 153 323 207M323 248Q371 211 366 179Q329 186 323 248M323 285Q371 243 367 212Q329 219 323 285"/></g>
+        <g transform="translate(152 15) rotate(24 320 170) scale(.82)"><path d="M320 166Q277 139 291 110Q321 121 320 166M320 207Q273 176 280 144Q316 153 320 207M320 248Q272 211 277 179Q314 186 320 248M320 285Q272 243 276 212Q314 219 320 285M323 166Q366 139 352 110Q322 121 323 166M323 207Q370 176 363 144Q327 153 323 207M323 248Q371 211 366 179Q329 186 323 248M323 285Q371 243 367 212Q329 219 323 285"/></g>
+      </g>
+      <path d="M305 431Q213 388 178 327Q263 337 305 431M336 438Q407 346 467 337Q442 403 336 438" fill="#758358"/>
+    </symbol>
+    <symbol id="dna" viewBox="0 0 640 480">
+      <g fill="none" stroke-linecap="round">
+        <path d="M80 85C365 75 259 412 553 396" stroke="#92b89b" stroke-width="20"/>
+        <path d="M91 396C365 407 273 78 553 86" stroke="#e8c489" stroke-width="20"/>
+        <g stroke="#c5d2bd" stroke-width="7"><path d="M128 94 128 387M177 117 177 365M226 161 226 317M274 220 274 261M321 233 321 245M369 185 369 295M418 132 418 347M467 101 467 379M517 88 517 393"/></g>
+      </g>
+      <g fill="#f3ebd4"><circle cx="128" cy="94" r="13"/><circle cx="226" cy="161" r="13"/><circle cx="369" cy="295" r="13"/><circle cx="517" cy="393" r="13"/></g>
+    </symbol>
+    <symbol id="network" viewBox="0 0 640 480">
+      <g fill="none" stroke="#859b8d" stroke-width="2"><ellipse cx="320" cy="240" rx="190" ry="190"/><ellipse cx="320" cy="240" rx="95" ry="190"/><ellipse cx="320" cy="240" rx="190" ry="85"/><path d="M130 240H510M320 50V430M175 121 466 358M169 358 460 119"/><path d="M200 160 439 202 326 370 200 160 394 105 439 202" stroke="#d8ab69" stroke-width="5"/></g>
+      <g fill="#f2e8d0" stroke="#315c45" stroke-width="5"><circle cx="200" cy="160" r="15"/><circle cx="439" cy="202" r="15"/><circle cx="326" cy="370" r="15"/><circle cx="394" cy="105" r="15"/></g>
+    </symbol>
+  </defs>
+</svg>

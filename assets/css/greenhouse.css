@@ -9,8 +9,28 @@
 .mascot-hit:focus-visible { outline:2px dashed var(--green); outline-offset:6px; --smile:1; --hover-tilt:-5deg; }
 .mascot.is-curious .mascot-hit { --hover-lift:-4px; --hover-tilt:-5deg; --hello-angle:-12deg; --smile:1; }
 .mascot.is-winking .mascot-hit { --wink:1; }
-.mascot-invite { position:absolute; z-index:2; top:100%; left:50%; min-width:11rem; transform:translate(-50%,-8px); padding:.45rem .8rem; border:1px solid #cfdbc6; border-radius:8px; background:#fcfbf5; color:#315c45; font:.75rem/1.5 var(--sans); text-align:center; opacity:0; visibility:hidden; transition:opacity .18s ease,transform .18s ease; pointer-events:none; }
-.mascot.is-curious .mascot-invite,.mascot:focus-within .mascot-invite { opacity:1; visibility:visible; transform:translate(-50%,0); }
+/* A speech balloon anchored to the head, with room to escape the hero circle. */
+.mascot-invite {
+  position:absolute; z-index:2; top:var(--bubble-top,-90px); left:var(--bubble-left,52%);
+  width:var(--bubble-width,270px); min-width:0; padding:var(--bubble-padding,18px) calc(var(--bubble-padding,18px) + 5px);
+  border:1.5px solid #bdcdb3; border-radius:26px 28px 25px 23px;
+  background:#fffdf3; color:#315c45; box-shadow:0 12px 24px -14px #23442d65;
+  font:var(--bubble-font,28px)/1.16 var(--serif); letter-spacing:-.025em; text-align:center;
+  opacity:0; visibility:hidden; pointer-events:none;
+  transform-origin:22% calc(100% + 26px); transform:translate(8px,16px) scale(.72) rotate(-9deg);
+  transition:opacity .18s ease,visibility .18s,transform .4s cubic-bezier(.2,1.45,.4,1);
+}
+.mascot-invite>span { display:block; }
+.mascot .mascot-bubble-tail { position:absolute; top:calc(100% - 2px); left:18%; width:43px; height:38px; overflow:visible; }
+.mascot-bubble-tail path { fill:#fffdf3; stroke:#bdcdb3; stroke-width:1.5; }
+.mascot.is-curious .mascot-invite,.mascot:focus-within .mascot-invite { opacity:1; visibility:visible; transform:scale(1) rotate(-3deg); }
+.mascot[data-bubble="below"] .mascot-invite { transform-origin:calc(100% - 26px) -26px; transform:translateY(-12px) scale(.82) rotate(3deg); border-radius:22px; }
+.mascot[data-bubble="below"] .mascot-bubble-tail { top:auto; bottom:calc(100% - 2px); left:auto; right:14px; transform:rotate(180deg); }
+.mascot[data-bubble="below"].is-curious .mascot-invite,.mascot[data-bubble="below"]:focus-within .mascot-invite { transform:scale(1); }
+@media (max-width:600px) {
+  .hero-art { padding-top:60px; }
+  .hero-halo { top:calc(6% + 58px); }
+}
 html.greenhouse-open { overflow:hidden; }
 .greenhouse { width:min(1160px,calc(100% - 40px)); max-width:none; max-height:calc(100dvh - 40px); margin:auto; padding:0; border:1px solid #d4ddca; border-radius:22px; background:#f8f7ef; color:#25392e; box-shadow:0 30px 100px #0e241f40; font-size:18px; line-height:1.6; overscroll-behavior:contain; }
 .greenhouse:not([open]) { display:none; }
@@ -74,10 +94,6 @@ html.greenhouse-open { overflow:hidden; }
 @keyframes lab-sprout { from { transform:scale(.88,.12); opacity:.2; } to { transform:scale(1); opacity:1; } }
 @keyframes lab-reveal { 0%,35% { transform:scale(.2); opacity:0; } 75% { transform:scale(1.045); opacity:1; } 100% { transform:scale(1); opacity:1; } }
 @keyframes lab-pollen { 0% { transform:scale(.8); opacity:0; } 35% { opacity:1; } 100% { transform:scale(1.16); opacity:0; } }
-@media (max-width:2099px) {
-  .mascot[data-docked="true"] .mascot-invite { left:auto; right:0; transform:translateY(-8px); }
-  .mascot[data-docked="true"].is-curious .mascot-invite,.mascot[data-docked="true"]:focus-within .mascot-invite { transform:translateY(0); }
-}
 @media (max-width:700px) {
   .greenhouse { width:calc(100% - 20px); max-height:calc(100dvh - 20px); border-radius:16px; }
   .lab-topbar { padding:8px 14px 4px 20px; }.lab-heading { padding:0 20px 8px; }.lab-heading h2 { font-size:36px; }.lab-heading p { font-size:14px; }
@@ -85,7 +101,7 @@ html.greenhouse-open { overflow:hidden; }
   .lab-controls { padding-top:10px; }.lab-parents { display:grid; grid-template-columns:minmax(0,1fr) 14px minmax(0,1fr); gap:8px; align-items:center; }.parent-options { gap:4px; }.parent-option>span { font-size:17px; padding:10px 0; }.parent-option small { font-size:10px; }.lab-parents legend { font-size:12px; }.cross-sign { padding-top:17px; }.lab-footer { padding:14px 20px 20px; flex-direction:column; gap:8px; }
 }
 @media (max-width:380px) {
-  .lab-heading h2 { font-size:32px; }.lab-body,.lab-heading { padding-inline:16px; }.lab-parents { gap:5px; grid-template-columns:minmax(0,1fr) 8px minmax(0,1fr); }.parent-option>span { font-size:15px; }.parent-option small { font-size:9px; }.lab-topbar { padding-left:16px; }.mascot-invite { min-width:10rem; font-size:.7rem; }
+  .lab-heading h2 { font-size:32px; }.lab-body,.lab-heading { padding-inline:16px; }.lab-parents { gap:5px; grid-template-columns:minmax(0,1fr) 8px minmax(0,1fr); }.parent-option>span { font-size:15px; }.parent-option small { font-size:9px; }.lab-topbar { padding-left:16px; }
 }
 @media (prefers-reduced-motion:reduce) {
   .mascot,.lab-guide { --pose-duration:0s !important; --eye-duration:0s !important; }

@@ -8,9 +8,9 @@ Plain semantic HTML, a core stylesheet and optional character/greenhouse styles 
 
 - `index.html`: biography, research, publications, software, career, contact and Person structured data.
 - `assets/css/style.css`: responsive layout, a fluid 17–22px reading scale, focus states and print styles. The content width grows to 1600px for large displays. Expansive research chapters pair large headings with original botanical and genomic illustrations.
-- `assets/images/researcher.svg`: original vector researcher with layered side-parted hair, detailed clothing, hands and props. CSS variables control gaze, expression, greeting, book, laptop and DNA poses.
+- `assets/images/researcher.svg`: original vector researcher with a softly parted textured crop, detailed clothing, hands and props. CSS variables control gaze, expression, greeting, book, laptop and DNA poses.
 - `assets/images/research-visuals.svg`: original pea, wheat, DNA and network illustrations, rendered through SVG symbols.
-- `assets/js/story.js`: a passive scroll listener batches updates through `requestAnimationFrame`. The character moves into the side margin on wide displays or the reserved navigation space on smaller screens. It changes pose by section and responds to pointer hover with gaze and expression. Reduced-motion preference leaves the character in the hero and disables movement.
+- `assets/js/story.js`: a passive scroll listener batches updates through `requestAnimationFrame`. The character moves into the side margin on wide displays or the reserved navigation space on smaller screens. It changes pose by section and responds to pointer hover with gaze and expression. A head-anchored speech balloon springs beyond the hero circle on hover or keyboard focus; its position adapts to the character size and available screen space. Reduced-motion preference leaves the character in the hero and disables movement.
 - `assets/js/greenhouse.js` and `assets/css/greenhouse.css`: the optional pocket greenhouse, opened by the character button. Native dialog semantics, keyboard focus cycling, touch controls and reduced-motion support are included.
 - `assets/images/favicon.svg`: small typographic favicon; `logo.ico` remains the fallback.
 - `cv/index.html`: accessible wrapper around the unchanged archived PDF files.

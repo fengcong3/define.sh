@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 480">
   <defs>
     <linearGradient id="avatar-skin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8dcc1"/><stop offset=".6" stop-color="#edc2a3"/><stop offset="1" stop-color="#dba58b"/></linearGradient>
-    <linearGradient id="avatar-hair" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="#4a4442"/><stop offset=".5" stop-color="#302e2e"/><stop offset="1" stop-color="#23282a"/></linearGradient>
+    <linearGradient id="avatar-hair" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="#424445"/><stop offset=".5" stop-color="#2f3233"/><stop offset="1" stop-color="#23292b"/></linearGradient>
     <linearGradient id="avatar-jacket" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a0b599"/><stop offset=".65" stop-color="#849f82"/><stop offset="1" stop-color="#64816c"/></linearGradient>
     <linearGradient id="avatar-metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e5eee7"/><stop offset="1" stop-color="#adc4b7"/></linearGradient>
     <linearGradient id="avatar-pages" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#fffbed"/><stop offset=".48" stop-color="#e7dec0"/><stop offset=".52" stop-color="#fffbed"/><stop offset="1" stop-color="#ece8d5"/></linearGradient>
@@ -24,8 +24,8 @@
       <path d="M198 222 198 249Q211 265 231 248L229 221" fill="url(#avatar-skin)"/>
       <path d="M200 231Q215 246 230 232" fill="#cd957c" opacity=".35" stroke="none"/>
       <g style="transform-origin:212px 236px;transform:rotate(calc(var(--head-angle,-3deg) + var(--hover-tilt,0deg)));transition:transform var(--pose-duration,.45s) ease">
-        <!-- Soft, layered side-parted hair with a lightly feathered nape. -->
-        <path d="M142 128Q119 169 143 205L139 217 153 214 158 228 167 218 181 229 180 204H257L261 225 270 216 283 219 279 205Q298 177 284 137Z" fill="#2b2d2c" stroke="#2c302e"/>
+        <!-- Short, close-fitting sides behind the textured fringe. -->
+        <path d="M142 128Q127 149 138 172L148 181 158 161H270L279 179Q294 166 286 135Z" fill="#292e30" stroke="#2c302e"/>
         <path d="M149 153Q128 138 129 160Q130 179 150 181M278 151Q300 138 298 160Q296 180 277 180" fill="url(#avatar-skin)" stroke="#a67e68" stroke-width="1.6"/>
         <path d="M138 153Q133 163 143 169M289 151Q298 159 286 169" fill="none" stroke="#c09078" stroke-width="1.4"/>
         <path d="M149 109Q159 81 209 84Q258 80 275 111L278 170Q277 210 243 230Q217 247 192 235Q151 218 148 180Z" fill="url(#avatar-skin)" stroke="#ad806b" stroke-width="1.8"/>
@@ -51,17 +51,23 @@
         <path d="M198 206Q216 217 234 203" fill="none" stroke="#855f4f" stroke-width="1.8" style="opacity:calc(1 - var(--smile,0))"/>
         <path d="M195 203Q215 212 237 200Q218 225 195 203Z" fill="#fff8e8" stroke="#936a58" stroke-width="1.5" style="opacity:var(--smile,0)"/>
         <path d="M207 216Q216 220 226 214" fill="none" stroke="#c9967e" stroke-width="1.3"/>
-        <!-- Layered fringe: the off-centre opening keeps the forehead visible. -->
-        <path d="M143 162Q134 146 133 124L123 126Q119 101 132 85L127 82Q143 56 173 54L170 46Q198 31 224 43Q255 26 277 51Q300 66 295 93L303 99Q301 126 281 151L274 160Q269 128 251 110L238 92Q219 118 196 129L188 145 180 137 163 151 161 142 151 153 150 167Z" fill="url(#avatar-hair)" stroke="#2a2d2c" stroke-width="1.6"/>
-        <path d="M139 109Q177 103 216 64Q230 47 248 44Q220 92 171 128L162 145Q158 124 139 130Z" fill="#393737" stroke="none"/>
-        <path d="M158 73Q187 55 222 55Q201 84 161 97L142 109Q148 86 158 73Z" fill="#45403e" opacity=".7" stroke="none"/>
-        <path d="M246 48Q274 61 281 81Q293 114 279 146L273 128Q276 95 252 84L239 92Q244 75 246 48Z" fill="#3c3735" stroke="none"/>
-        <path d="M236 90Q224 116 199 134L193 147Q190 128 206 109Q186 131 174 135Q203 106 214 82" fill="#2c2d2c" stroke="none"/>
-        <path d="M249 90Q264 107 266 132L260 144Q261 119 245 108Z" fill="#303030" stroke="none"/>
-        <g fill="none" stroke="#79706a" stroke-width="1.3" opacity=".4">
-          <path d="M146 89Q177 78 205 54M139 100Q176 87 216 53M151 114Q191 93 224 54M168 124Q205 101 232 61M194 122Q222 100 237 75M250 52Q278 76 281 103M250 67Q270 82 274 116M257 84Q270 102 268 122"/>
+        <!-- A soft textured crop: a subtle part and wispy, uneven fringe. -->
+        <path d="M143 170C136 160 134 150 132 139C123 126 123 106 132 88Q139 68 155 63C169 43 198 36 217 49Q221 41 226 49C246 38 273 44 286 64Q302 76 299 91C309 110 299 143 283 164L279 145Q272 154 265 146Q263 153 255 156Q258 139 249 127Q253 146 243 160Q243 143 235 132Q238 148 226 158Q230 141 223 130Q223 151 211 162Q215 145 211 134Q209 149 198 155Q200 141 195 134Q189 152 180 155Q184 141 180 134Q173 149 162 152Q165 140 160 133Q152 146 147 148Z" fill="url(#avatar-hair)" stroke="#292e2e" stroke-width="1.35"/>
+        <g stroke="none">
+          <path d="M213 51C190 55 171 73 166 95Q151 120 152 143Q169 126 174 104Q184 75 213 51Z" fill="#414142" opacity=".72"/>
+          <path d="M215 56C201 77 195 105 197 141Q207 127 215 99Q212 120 207 142C224 119 222 80 222 58Z" fill="#38393a"/>
+          <path d="M226 54C247 63 267 87 272 110Q279 132 278 148Q286 120 275 95Q259 62 226 54Z" fill="#3b3d3e"/>
+          <path d="M229 60C243 86 241 113 243 145Q251 128 248 107Q253 126 254 146C265 120 246 77 229 60Z" fill="#3a3b3c" opacity=".7"/>
+          <path d="M184 69C169 92 172 118 162 146Q177 129 181 108L184 136C195 112 187 91 200 64Z" fill="#363738"/>
+          <path d="M141 92Q131 121 140 148L147 138Q140 115 155 89Z" fill="#292e30"/>
+          <path d="M286 96Q299 113 286 146L281 141Q290 120 286 96Z" fill="#292e30"/>
         </g>
-        <g fill="none" stroke="#423d3b" stroke-width="1.15" opacity=".8"><path d="M149 65Q158 44 192 45M163 51Q189 33 210 42M211 42Q244 23 258 37M262 43Q285 43 293 68M131 88Q116 94 123 117"/></g>
+        <g fill="none" stroke="#72716e" stroke-width="1.05" opacity=".32">
+          <path d="M204 52Q175 66 163 88M196 62Q178 81 172 111M184 86Q175 114 168 130M213 58Q196 85 195 114M212 75Q205 100 205 125M219 72Q223 100 216 132M228 57Q246 75 251 95M235 75Q244 96 240 121M251 91Q264 115 260 133M245 56Q271 70 281 97M269 83Q282 103 282 121M150 85Q139 107 140 125"/>
+        </g>
+        <g fill="none" stroke="#444748" stroke-width="1" opacity=".8">
+          <path d="M145 73Q159 53 178 52M161 60Q182 40 203 45M200 45Q213 36 219 47M225 47Q236 37 250 46M264 51Q286 58 290 76M136 94Q126 110 130 122M293 109Q302 126 291 141M171 128q-2 17-8 23M190 131q0 14-7 22M234 132q5 15 2 20"/>
+        </g>
       </g>
       <!-- Greeting arm, with an articulated cuff, fingers and palm. -->
       <g style="opacity:var(--wave,1);transform-origin:281px 281px;transform:rotate(calc(var(--wave-angle,0deg) + var(--hello-angle,0deg)));transition:opacity var(--pose-duration,.35s),transform var(--pose-duration,.45s) ease">

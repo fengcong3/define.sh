@@ -14,6 +14,27 @@
   const clamp = n => Math.min(1, Math.max(0, n));
   const mix = (a, b, t) => a + (b - a) * t;
 
+  function positionInvitation() {
+    const bubble = mascot.querySelector('.mascot-invite');
+    if (!bubble) return;
+    const r = mascot.getBoundingClientRect();
+    const small = r.width < 130;
+    const bubbleWidth = Math.min(innerWidth - 40, Math.max(176, Math.min(286, r.width * .55)));
+    bubble.style.setProperty('--bubble-width', bubbleWidth + 'px');
+    bubble.style.setProperty('--bubble-font', Math.max(18, Math.min(30, r.width * .058)) + 'px');
+    bubble.style.setProperty('--bubble-padding', Math.max(12, Math.min(20, r.width * .035)) + 'px');
+    const height = bubble.offsetHeight;
+    const headTop = r.top + r.height * .1;
+    const ceiling = header.getBoundingClientRect().bottom + 12;
+    const below = small && headTop - height - 30 < ceiling;
+    mascot.dataset.bubble = below ? 'below' : 'above';
+    const idealLeft = below ? r.right - bubbleWidth : r.left + r.width * .51;
+    const left = Math.max(20, Math.min(innerWidth - bubbleWidth - 20, idealLeft));
+    const top = below ? Math.max(ceiling, r.top + r.height * .35 + 30) : Math.max(ceiling, headTop - height - 30);
+    bubble.style.setProperty('--bubble-left', left - r.left + 'px');
+    bubble.style.setProperty('--bubble-top', top - r.top + 'px');
+  }
+
   function render() {
     scheduled = false;
     let active = sections[0];
@@ -36,6 +57,7 @@
       mascot.removeAttribute('style');
       mascot.classList.remove('is-travelling');
       document.documentElement.classList.remove('has-motion');
+      positionInvitation();
       return;
     }
     mascot.dataset.scene = scene;
@@ -59,6 +81,7 @@
     mascot.style.setProperty('--wave-angle', Math.sin(scrollY / 125) * 9 + 'deg');
     mascot.style.setProperty('--dna-angle', Math.sin(scrollY / 320) * 8 + 'deg');
     mascot.style.setProperty('--dock-progress', eased);
+    positionInvitation();
   }
   function requestRender() {
     if (!scheduled) { scheduled = true; requestAnimationFrame(render); }
@@ -86,6 +109,7 @@
   if (hit) {
     hit.addEventListener('pointerenter', () => {
       if (!finePointer.matches || hit.disabled) return;
+      positionInvitation();
       mascot.classList.add('is-curious');
       if (!reducedMotion.matches) {
         mascot.classList.add('is-winking');
@@ -105,6 +129,7 @@
         mascot.style.setProperty('--look-y', y * 2 + 'px');
       });
     });
+    hit.addEventListener('focus', positionInvitation);
     hit.addEventListener('pointerleave', clearGreeting);
     hit.addEventListener('pointercancel', clearGreeting);
     hit.addEventListener('click', clearGreeting);

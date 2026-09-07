@@ -1,60 +1,117 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 480">
-  <g id="researcher" stroke="#263d35" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-    <ellipse cx="214" cy="450" rx="117" ry="14" fill="#dce4d5" stroke="none"/>
-    <g style="transform-origin:210px 300px;transform:rotate(var(--body-angle,0deg));transition:transform .55s ease">
-      <path d="M153 359 143 423Q164 439 189 424L208 369M226 368 239 424Q264 436 287 418L272 358" fill="#344942"/>
-      <path d="M142 418Q130 433 118 437Q109 452 143 452L188 451 190 426" fill="#f3f0df"/>
-      <path d="M239 423 240 451 292 451Q313 450 300 436L287 418" fill="#f3f0df"/>
-      <path d="M120 445H185M243 445H295" stroke="#9aa695"/>
-      <path d="M177 252Q142 256 123 284L145 369Q213 385 283 368L298 281Q276 252 245 251" fill="#8ca889"/>
-      <path d="M190 247 215 271 237 247 250 371H177Z" fill="#f7f2df"/>
-      <path d="M179 254 170 281 190 298 175 370M246 254 257 279 239 299 251 370" fill="#a5bba0"/>
-      <path d="M150 312 173 314 169 341 150 339ZM260 313 279 311 279 338 263 339Z" fill="#7e9a7d"/>
-      <path d="M203 216 201 250Q215 267 232 249L230 216" fill="#e8b396"/>
-      <g style="transform-origin:212px 232px;transform:rotate(var(--head-angle,-5deg));transition:transform .55s ease">
-        <path d="M145 164Q126 146 129 119Q126 75 163 64Q176 32 208 49Q252 35 280 74Q296 93 288 151L275 178Z" fill="#283b34"/>
-        <path d="M143 145Q121 136 124 159Q125 179 147 179M281 143Q304 137 298 164Q295 179 279 177" fill="#e8b396"/>
-        <path d="M147 106Q174 122 196 96Q226 120 259 96Q279 118 281 153L278 179Q276 222 230 238Q196 246 167 220Q143 199 145 167Z" fill="#f0c5a4"/>
-        <path d="M153 116Q174 103 183 83Q214 112 245 88" fill="none" stroke="#283b34" stroke-width="9"/>
-        <path d="M170 143Q180 137 191 143M230 141Q241 134 251 141" fill="none" stroke-width="5"/>
-        <g fill="#f8f7f2" fill-opacity=".22" stroke-width="4">
-          <rect x="152" y="151" width="51" height="35" rx="13"/>
-          <rect x="220" y="149" width="51" height="35" rx="13"/>
-          <path d="M203 162Q212 156 220 161M145 155 152 158M271 156 280 152" fill="none"/>
+  <defs>
+    <linearGradient id="avatar-skin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8dcc1"/><stop offset=".6" stop-color="#edc2a3"/><stop offset="1" stop-color="#dba58b"/></linearGradient>
+    <linearGradient id="avatar-hair" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="#4a4442"/><stop offset=".5" stop-color="#302e2e"/><stop offset="1" stop-color="#23282a"/></linearGradient>
+    <linearGradient id="avatar-jacket" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a0b599"/><stop offset=".65" stop-color="#849f82"/><stop offset="1" stop-color="#64816c"/></linearGradient>
+    <linearGradient id="avatar-metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e5eee7"/><stop offset="1" stop-color="#adc4b7"/></linearGradient>
+    <linearGradient id="avatar-pages" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#fffbed"/><stop offset=".48" stop-color="#e7dec0"/><stop offset=".52" stop-color="#fffbed"/><stop offset="1" stop-color="#ece8d5"/></linearGradient>
+  </defs>
+  <g id="researcher" stroke="#34483e" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="214" cy="450" rx="108" ry="11" fill="#cedbc9" opacity=".65" stroke="none"/>
+    <g style="transform-origin:210px 330px;transform:translateY(var(--hover-lift,0px)) rotate(var(--body-angle,0deg));transition:transform var(--pose-duration,.45s) ease">
+      <!-- Tailored trousers, fabric folds and low canvas shoes. -->
+      <path d="M157 356 147 420Q165 429 189 422L211 371 233 420Q253 430 279 420L268 356Z" fill="#3c5048"/>
+      <path d="M174 378 169 414M247 378 258 414M207 371 213 363" fill="none" stroke="#617368" stroke-width="1.4"/>
+      <path d="M147 417Q140 429 124 435Q115 439 119 448Q149 455 190 448L190 422Z" fill="#f4f1e5"/>
+      <path d="M233 420 232 447Q272 455 300 448Q305 439 292 434L279 417Z" fill="#f4f1e5"/>
+      <g fill="none" stroke="#aab4a1" stroke-width="1.4"><path d="M121 445Q151 450 188 445M234 444Q267 451 299 445M149 430l17 3m-21 2 17 2m99-7-17 3m22 2-17 2"/></g>
+      <path d="M176 251Q143 254 127 279L146 367Q211 381 277 367L294 279Q273 254 244 250Z" fill="url(#avatar-jacket)"/>
+      <path d="M192 250 213 271 233 249 247 369Q210 375 179 369Z" fill="#f7f1dd"/>
+      <path d="M197 264Q212 279 228 264" fill="none" stroke="#d9d4be" stroke-width="2"/>
+      <path d="M178 254 170 281 188 298 176 366M244 254 254 280 237 298 249 368" fill="#adc0a4"/>
+      <g fill="none" stroke="#577562" stroke-width="1.3"><path d="M151 308 173 310 170 337 151 335ZM254 310 275 309 273 335 256 336ZM150 315l22 2m84 0 18-1M147 353l23 3m86-1 18-3"/></g>
+      <g fill="#e5e4cd" stroke="none"><circle cx="179" cy="324" r="2"/><circle cx="176" cy="347" r="2"/><circle cx="248" cy="324" r="2"/><circle cx="251" cy="347" r="2"/></g>
+      <path d="M198 222 198 249Q211 265 231 248L229 221" fill="url(#avatar-skin)"/>
+      <path d="M200 231Q215 246 230 232" fill="#cd957c" opacity=".35" stroke="none"/>
+      <g style="transform-origin:212px 236px;transform:rotate(calc(var(--head-angle,-3deg) + var(--hover-tilt,0deg)));transition:transform var(--pose-duration,.45s) ease">
+        <!-- Soft, layered side-parted hair with a lightly feathered nape. -->
+        <path d="M142 128Q119 169 143 205L139 217 153 214 158 228 167 218 181 229 180 204H257L261 225 270 216 283 219 279 205Q298 177 284 137Z" fill="#2b2d2c" stroke="#2c302e"/>
+        <path d="M149 153Q128 138 129 160Q130 179 150 181M278 151Q300 138 298 160Q296 180 277 180" fill="url(#avatar-skin)" stroke="#a67e68" stroke-width="1.6"/>
+        <path d="M138 153Q133 163 143 169M289 151Q298 159 286 169" fill="none" stroke="#c09078" stroke-width="1.4"/>
+        <path d="M149 109Q159 81 209 84Q258 80 275 111L278 170Q277 210 243 230Q217 247 192 235Q151 218 148 180Z" fill="url(#avatar-skin)" stroke="#ad806b" stroke-width="1.8"/>
+        <path d="M153 169Q152 211 193 230Q222 244 247 225Q218 255 190 236Q151 217 149 180Z" fill="#d6a28a" opacity=".24" stroke="none"/>
+        <ellipse cx="165" cy="193" rx="12" ry="5" fill="#d8907c" opacity=".3" stroke="none"/><ellipse cx="261" cy="190" rx="11" ry="5" fill="#d8907c" opacity=".26" stroke="none"/>
+        <path d="M165 147Q176 141 188 146M232 144Q243 137 254 143" fill="none" stroke="#514540" stroke-width="3"/>
+        <g fill="#fffaf0" stroke="#6d6353" stroke-width="1">
+          <path d="M169 166Q180 156 193 165Q183 175 169 166Z"/>
+          <path d="M232 163Q244 154 256 163Q245 173 232 163Z" style="opacity:calc(1 - var(--wink,0))"/>
         </g>
-        <g fill="#263d35" stroke="none" style="transform:translateX(var(--eye-x,0px));transition:transform .45s ease"><ellipse cx="181" cy="166" rx="4" ry="6"/><ellipse cx="243" cy="164" rx="4" ry="6"/></g>
-        <path d="M213 165 208 185Q210 190 218 187" fill="none" stroke="#bb8066" stroke-width="2.5"/>
-        <path d="M196 204Q214 218 234 200" fill="#fff9e9"/>
-        <path d="M156 193 169 197M252 193 264 187" stroke="#dd9f85" stroke-width="5"/>
-        <path d="M145 153 146 126M277 125 282 153" stroke="#283b34" stroke-width="7"/>
+        <g style="transform:translate(calc(var(--eye-x,0px) + var(--look-x,0px)),var(--look-y,0px));transition:transform var(--eye-duration,.16s) ease" stroke="none">
+          <ellipse cx="182" cy="165" rx="4.6" ry="6.1" fill="#465143"/><ellipse cx="182" cy="165" rx="2.5" ry="4.7" fill="#26362f"/><circle cx="180.5" cy="162.5" r="1.5" fill="#fff9e9"/>
+          <g style="opacity:calc(1 - var(--wink,0))"><ellipse cx="245" cy="162.5" rx="4.6" ry="6.1" fill="#465143"/><ellipse cx="245" cy="162.5" rx="2.5" ry="4.7" fill="#26362f"/><circle cx="243.5" cy="160" r="1.5" fill="#fff9e9"/></g>
+        </g>
+        <path d="M233 165Q245 157 256 164" fill="none" stroke="#514540" stroke-width="2" style="opacity:var(--wink,0)"/>
+        <g fill="#fffdf1" fill-opacity=".1" stroke="#465c50" stroke-width="2.7">
+          <rect x="155" y="152" width="49" height="32" rx="12" transform="rotate(-2 179 168)"/>
+          <rect x="222" y="149" width="49" height="32" rx="12" transform="rotate(-2 246 166)"/>
+          <path d="M204 160Q213 154 222 159M147 153 155 157M271 154 280 148" fill="none"/>
+        </g>
+        <path d="m160 157 10-1m57-2 10-1" stroke="#faf9e9" stroke-width="1.7" opacity=".6"/>
+        <path d="M214 170 209 185Q212 189 218 186" fill="none" stroke="#bd8971" stroke-width="1.6"/>
+        <path d="M198 206Q216 217 234 203" fill="none" stroke="#855f4f" stroke-width="1.8" style="opacity:calc(1 - var(--smile,0))"/>
+        <path d="M195 203Q215 212 237 200Q218 225 195 203Z" fill="#fff8e8" stroke="#936a58" stroke-width="1.5" style="opacity:var(--smile,0)"/>
+        <path d="M207 216Q216 220 226 214" fill="none" stroke="#c9967e" stroke-width="1.3"/>
+        <!-- Layered fringe: the off-centre opening keeps the forehead visible. -->
+        <path d="M143 162Q134 146 133 124L123 126Q119 101 132 85L127 82Q143 56 173 54L170 46Q198 31 224 43Q255 26 277 51Q300 66 295 93L303 99Q301 126 281 151L274 160Q269 128 251 110L238 92Q219 118 196 129L188 145 180 137 163 151 161 142 151 153 150 167Z" fill="url(#avatar-hair)" stroke="#2a2d2c" stroke-width="1.6"/>
+        <path d="M139 109Q177 103 216 64Q230 47 248 44Q220 92 171 128L162 145Q158 124 139 130Z" fill="#393737" stroke="none"/>
+        <path d="M158 73Q187 55 222 55Q201 84 161 97L142 109Q148 86 158 73Z" fill="#45403e" opacity=".7" stroke="none"/>
+        <path d="M246 48Q274 61 281 81Q293 114 279 146L273 128Q276 95 252 84L239 92Q244 75 246 48Z" fill="#3c3735" stroke="none"/>
+        <path d="M236 90Q224 116 199 134L193 147Q190 128 206 109Q186 131 174 135Q203 106 214 82" fill="#2c2d2c" stroke="none"/>
+        <path d="M249 90Q264 107 266 132L260 144Q261 119 245 108Z" fill="#303030" stroke="none"/>
+        <g fill="none" stroke="#79706a" stroke-width="1.3" opacity=".4">
+          <path d="M146 89Q177 78 205 54M139 100Q176 87 216 53M151 114Q191 93 224 54M168 124Q205 101 232 61M194 122Q222 100 237 75M250 52Q278 76 281 103M250 67Q270 82 274 116M257 84Q270 102 268 122"/>
+        </g>
+        <g fill="none" stroke="#423d3b" stroke-width="1.15" opacity=".8"><path d="M149 65Q158 44 192 45M163 51Q189 33 210 42M211 42Q244 23 258 37M262 43Q285 43 293 68M131 88Q116 94 123 117"/></g>
       </g>
-      <g style="opacity:var(--wave,1);transform-origin:282px 282px;transform:rotate(var(--wave-angle,0deg));transition:opacity .3s,transform .55s ease">
-        <path d="M282 264Q305 272 314 251L330 207 354 216Q350 274 326 298Q310 314 292 305" fill="#8ca889"/>
-        <path d="M329 211 323 192Q309 174 316 169Q322 165 332 177L327 144Q325 133 332 133Q337 131 341 145L344 157 345 129Q346 118 352 122Q358 124 357 142L358 158 364 136Q367 127 373 132Q377 136 372 152L369 168Q380 148 385 154Q390 158 381 175L369 204 354 218Z" fill="#f0c5a4"/>
-        <path d="M331 207 354 214" stroke-width="6" stroke="#59785d"/>
+      <!-- Greeting arm, with an articulated cuff, fingers and palm. -->
+      <g style="opacity:var(--wave,1);transform-origin:281px 281px;transform:rotate(calc(var(--wave-angle,0deg) + var(--hello-angle,0deg)));transition:opacity var(--pose-duration,.35s),transform var(--pose-duration,.45s) ease">
+        <path d="M280 266Q301 276 314 251L329 210 354 218Q351 265 329 293Q316 311 292 303" fill="url(#avatar-jacket)"/>
+        <path d="M329 213 324 195Q312 179 316 174Q322 169 332 182L328 152Q327 143 332 142Q338 141 341 151L345 169 346 140Q346 131 352 132Q358 133 357 145L357 166 364 145Q367 137 372 141Q375 145 371 157L368 176Q379 159 384 164Q388 168 380 182L369 207 354 220Z" fill="url(#avatar-skin)" stroke="#aa806b" stroke-width="1.7"/>
+        <path d="M339 187Q349 183 359 189M344 200Q346 192 341 188M331 210l22 8" fill="none" stroke="#c18e75" stroke-width="1.3"/>
+        <path d="M329 209 355 217 351 228 326 219Z" fill="#a7bba0"/><path d="m329 218 21 7" stroke="#607c66" stroke-width="1"/><circle cx="345" cy="222" r="1.6" fill="#ece7cb" stroke="none"/>
       </g>
-      <g style="opacity:var(--rest,0);transition:opacity .3s">
-        <path d="M284 266Q304 275 304 306L280 344 254 328 270 291" fill="#8ca889"/>
-        <path d="M264 320Q238 310 235 324Q240 342 266 341L280 333" fill="#f0c5a4"/>
+      <g style="opacity:var(--rest,0);transition:opacity var(--pose-duration,.35s)">
+        <path d="M281 268Q300 274 303 300L280 338 260 326 275 292" fill="url(#avatar-jacket)"/>
+        <path d="M265 321Q246 315 242 324Q246 337 266 336L278 330" fill="url(#avatar-skin)" stroke="#ad826b" stroke-width="1.5"/>
+        <path d="m262 321 14 10m-28-4 14 4" stroke="#bd957a" stroke-width="1.1"/>
       </g>
-      <path d="M143 266Q121 271 116 299L128 335 154 324 143 300" fill="#8ca889"/>
-      <path d="M130 327Q153 309 164 322Q169 333 145 342L132 339" fill="#f0c5a4"/>
-      <g style="opacity:var(--book,0);transform:translateY(calc((1 - var(--book,0))*15px));transition:opacity .35s,transform .45s">
-        <path d="M153 284Q185 280 215 298Q245 278 277 284L271 354Q240 350 215 367Q184 350 151 355Z" fill="#e6bd75"/>
-        <path d="M160 290Q187 290 215 305Q244 287 270 290L266 345Q242 344 215 360Q190 345 159 347Z" fill="#fbf8ed"/>
-        <path d="M215 305V359M171 311 201 321M171 325 200 335M231 319 256 311M231 333 256 325" fill="none" stroke="#a3aa95" stroke-width="2"/>
+      <g style="opacity:calc(1 - var(--observe,0));transition:opacity var(--pose-duration,.35s)">
+        <path d="M144 268Q125 270 121 296L133 329 154 322 145 299" fill="url(#avatar-jacket)"/>
+        <path d="M133 325Q150 312 161 321Q169 329 150 338L136 336Z" fill="url(#avatar-skin)" stroke="#ad826b" stroke-width="1.5"/>
+        <path d="m143 326 9-3m-7 9 10-4" stroke="#c0957b" stroke-width="1"/>
       </g>
-      <g style="opacity:var(--laptop,0);transform:translateY(calc((1 - var(--laptop,0))*15px));transition:opacity .35s,transform .45s">
-        <path d="M129 291H291L279 374H142Z" fill="#e0e9e5"/>
-        <path d="M136 298H284L275 365H148Z" fill="#c8d8ce" stroke="none"/>
-        <path d="M123 375H298L291 384H133Z" fill="#f4f5e9"/>
-        <path d="m201 327-12 10 12 10m21-20 12 10-12 10" fill="none" stroke="#547863" stroke-width="4"/>
+      <g style="opacity:var(--observe,0);transition:opacity var(--pose-duration,.35s)">
+        <path d="M144 266Q126 268 120 294L95 278 82 295Q105 329 126 321L146 301" fill="url(#avatar-jacket)"/>
+        <path d="M99 281 87 272 79 262Q75 255 72 259Q69 262 75 273L62 273Q55 275 62 281L82 291 90 294Z" fill="url(#avatar-skin)" stroke="#ad826b" stroke-width="1.5"/>
+      </g>
+      <!-- Turned pages, stitched cover and a tiny botanical sketch. -->
+      <g style="opacity:var(--book,0);transform:translateY(calc((1 - var(--book,0))*12px));transition:opacity var(--pose-duration,.35s),transform var(--pose-duration,.45s)">
+        <path d="M151 287Q182 283 214 299Q247 282 278 286L272 354Q242 352 214 368Q185 353 151 355Z" fill="#ba9b60"/>
+        <path d="M156 286Q187 287 214 303Q244 286 274 288L267 349Q239 347 214 363Q188 348 155 351Z" fill="#eee6ca"/>
+        <path d="M160 280Q188 284 214 300Q245 283 271 282L265 343Q240 344 214 358Q190 344 159 345Z" fill="url(#avatar-pages)" stroke="#8b957c" stroke-width="1.3"/>
+        <path d="M214 301V357M162 348Q191 346 214 361Q239 349 269 350" fill="none" stroke="#c4bca3" stroke-width="1.1"/>
+        <g fill="none" stroke="#a4ae92" stroke-width="1.35"><path d="m169 302 29 10m-29-1 28 10m-28-1 20 7m40-20 27-9m-27 17 27-9m-27 17 16-5"/></g>
+        <path d="M232 341 246 326M239 334Q231 325 234 322Q242 322 241 331M242 331Q249 320 253 323Q255 328 242 333" fill="none" stroke="#799367" stroke-width="1.4"/>
+        <path d="M211 359 207 377 216 373 221 379 221 358" fill="#7f9b7b" stroke="none"/>
+        <path d="M149 329Q142 322 145 317Q150 313 157 321L162 328M271 322Q279 313 283 318Q287 324 275 333" fill="url(#avatar-skin)" stroke="#ad826b" stroke-width="1.4"/>
+      </g>
+      <!-- Brushed lid, an engraved mark and a small haplotype sticker. -->
+      <g style="opacity:var(--laptop,0);transform:translateY(calc((1 - var(--laptop,0))*12px));transition:opacity var(--pose-duration,.35s),transform var(--pose-duration,.45s)">
+        <path d="M132 293Q131 289 137 289H286Q292 289 291 294L280 369H143Z" fill="url(#avatar-metal)" stroke="#567365" stroke-width="1.7"/>
+        <path d="M137 293H286L276 364H148Z" fill="none" stroke="#f4f7e9" stroke-width="1.3"/>
+        <path d="M125 369H298L292 378H134Z" fill="#e8eddf" stroke="#617c6a" stroke-width="1.6"/>
+        <path d="M193 370H229L226 373H197Z" fill="#a7bdae" stroke="none"/>
+        <path d="M211 316C190 319 230 340 209 344M225 315C246 318 206 339 226 343" fill="none" stroke="#76947f" stroke-width="2.3"/>
+        <path d="m214 321 9 0m-10 6h10m-10 6h10m-10 6h9" stroke="#9fb3a0" stroke-width="1.4"/>
+        <rect x="151" y="342" width="22" height="15" rx="2" fill="#f4efd7" stroke="none"/>
+        <path d="m155 346h5m3 0h5m-13 4h5m3 0h5m-13 4h5m3 0h5" stroke="#89a581" stroke-width="2.5"/>
       </g>
     </g>
-    <g style="opacity:var(--dna,0);transform-origin:78px 222px;transform:rotate(var(--dna-angle,0deg));transition:opacity .35s,transform .55s ease" fill="none" stroke-width="5">
-      <path d="M43 141C134 168 19 253 110 281M110 141C19 168 134 253 43 281" stroke="#61866b"/>
-      <path d="m53 153 48 0m-48 111h48m-48-88 48 0m-48 64h48m-36-44h22m-22 24h22" stroke="#d5a65c"/>
+    <g style="opacity:var(--dna,0);transform-origin:77px 218px;transform:rotate(var(--dna-angle,0deg));transition:opacity var(--pose-duration,.35s),transform var(--pose-duration,.45s) ease" fill="none">
+      <path d="M44 147C129 173 23 237 106 263M106 147C23 173 129 237 44 263" stroke="#6c9878" stroke-width="5"/>
+      <path d="m52 155h46m-41 15h36m-23 16h11m-11 19h11m-24 18h38m-43 17h46m-46 15h46" stroke="#d4b26c" stroke-width="3"/>
+      <g fill="#faf1d2" stroke="#b69e68" stroke-width="1"><circle cx="53" cy="155" r="3"/><circle cx="93" cy="170" r="3"/><circle cx="58" cy="223" r="3"/><circle cx="98" cy="255" r="3"/></g>
     </g>
-    <g style="opacity:var(--spark,0);transition:opacity .35s" fill="none" stroke="#d5a65c" stroke-width="4"><path d="M329 92v26m-13-13h26M87 98v18m-9-9h18"/></g>
+    <g style="opacity:var(--spark,0);transition:opacity var(--pose-duration,.35s)" fill="none" stroke="#c7a365" stroke-width="2"><path d="M331 95v16m-8-8h16M90 107v12m-6-6h12"/><circle cx="317" cy="79" r="2" fill="#c7a365" stroke="none"/></g>
   </g>
 </svg>

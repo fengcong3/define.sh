@@ -4,13 +4,14 @@
 
 ## Implementation
 
-Plain semantic HTML, one CSS file and a small optional JavaScript enhancement. No framework, build step, package installation, external font request, analytics, or icon library is needed for the redesigned pages. Native anchors and `<details>` keep navigation and the publication archive usable without JavaScript. The separate, existing MkDocs guide at `/AI/` keeps its own assets and runtime.
+Plain semantic HTML, a core stylesheet and optional character/greenhouse styles and JavaScript. No framework, build step, package installation, external font request, analytics, or icon library is needed for the redesigned pages. Native anchors and `<details>` keep navigation and the publication archive usable without JavaScript. The separate, existing MkDocs guide at `/AI/` keeps its own assets and runtime.
 
 - `index.html`: biography, research, publications, software, career, contact and Person structured data.
 - `assets/css/style.css`: responsive layout, a fluid 17–22px reading scale, focus states and print styles. The content width grows to 1600px for large displays. Expansive research chapters pair large headings with original botanical and genomic illustrations.
-- `assets/images/researcher.svg`: original vector researcher with CSS-driven book, laptop, DNA and greeting poses; replaces the homepage photograph.
+- `assets/images/researcher.svg`: original vector researcher with layered side-parted hair, detailed clothing, hands and props. CSS variables control gaze, expression, greeting, book, laptop and DNA poses.
 - `assets/images/research-visuals.svg`: original pea, wheat, DNA and network illustrations, rendered through SVG symbols.
-- `assets/js/story.js`: a passive scroll listener batches updates through `requestAnimationFrame`. The character moves into the side margin on wide displays or the reserved navigation space on smaller screens. It changes pose by section; reduced-motion preference leaves a static hero illustration.
+- `assets/js/story.js`: a passive scroll listener batches updates through `requestAnimationFrame`. The character moves into the side margin on wide displays or the reserved navigation space on smaller screens. It changes pose by section and responds to pointer hover with gaze and expression. Reduced-motion preference leaves the character in the hero and disables movement.
+- `assets/js/greenhouse.js` and `assets/css/greenhouse.css`: the optional pocket greenhouse, opened by the character button. Native dialog semantics, keyboard focus cycling, touch controls and reduced-motion support are included.
 - `assets/images/favicon.svg`: small typographic favicon; `logo.ico` remains the fallback.
 - `cv/index.html`: accessible wrapper around the unchanged archived PDF files.
 - `AI/`: existing compiled AI practical guide; preserved as supplied.
@@ -29,7 +30,9 @@ Then open `http://127.0.0.1:8000/`. Asset paths start at `/` to support the cust
 
 ## Editing content
 
-Edit `index.html` directly. All substantive content remains available without JavaScript; the character is decorative and excluded from the accessibility tree. The haplotype matrix contains explicitly labelled illustrative samples, not research results.
+Edit `index.html` directly. All substantive content remains available without JavaScript; the character illustration is decorative, while its enabled button has an accessible name. Without JavaScript the button stays disabled and the experiment stays hidden. The haplotype matrix contains explicitly labelled illustrative samples, not research results.
+
+The pocket greenhouse is a playful, single-gene model of pea seed colour ([OpenStax reference](https://openstax.org/books/biology/pages/12-2-characteristics-and-traits)). Each parent contributes either allele with equal probability; the four combinations determine the displayed phenotype probabilities. A draw samples one combination independently. Changing parents clears the harvest, and only the latest twelve seeds are drawn while counts cover the current cross. This educational interaction does not represent personal research results. It has no remote service, saved data or additional dependencies.
 
 The owner requested removal of the open-notebook section, both blog links, the AI-guide homepage link and the discontinued cloud-disk link. The existing AI guide files and companion GitHub profile remain separate, unchanged resources.
 
@@ -51,6 +54,8 @@ Push to the configured Pages source branch, then check the repository’s Action
 - Follow section links; navigate by keyboard and test the skip link and publication disclosure.
 - Check the page with JavaScript disabled, increased text size and reduced motion.
 - Verify local assets, both CV downloads, `/AI/`, sitemap, and the 404 page.
+- Check the character in all scroll scenes, pointer hover, touch activation and modal focus return.
+- Check all nine parental crosses, repeated draws, harvest reset, closing during growth and reduced-motion outcomes.
 - Check console/network errors and metadata; review the Git diff before publishing.
 
 The previous version was based on the vCard template by Sadee. Its tab navigation, percentage bars, modal/filter code, Poppins/ionicons dependencies and unused screenshot assets were removed in this redesign. Historical changes are recorded in `CHANGES.md`.

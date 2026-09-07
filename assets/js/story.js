@@ -32,6 +32,7 @@
     }
     if (reducedMotion.matches) {
       mascot.dataset.scene = 'welcome';
+      delete mascot.dataset.docked;
       mascot.removeAttribute('style');
       mascot.classList.remove('is-travelling');
       document.documentElement.classList.remove('has-motion');
@@ -43,10 +44,18 @@
     const to = dock.getBoundingClientRect();
     const distance = Math.max(1, from.top + scrollY + from.height - header.getBoundingClientRect().bottom);
     const t = clamp(scrollY / distance);
-    const eased = t * t * (3 - 2 * t);
+    // Shrink within the right edge first, so the hit target never sweeps over links.
+    const shrink = clamp(t * 2.5);
+    const compact = shrink * shrink * (3 - 2 * shrink);
+    const travel = clamp((t - .35) / .65);
+    const eased = travel * travel * (3 - 2 * travel);
+    const width = mix(from.width, to.width, compact);
+    const startTop = innerWidth >= 2100 ? from.top + scrollY : Math.max(from.top, to.top);
+    const top = mix(startTop, to.top, eased);
+    mascot.dataset.docked = String(compact > .99 && Math.abs(top - to.top) < 2);
     mascot.classList.add('is-travelling');
-    mascot.style.width = mix(from.width, to.width, eased) + 'px';
-    mascot.style.transform = `translate3d(${mix(from.left, to.left, eased)}px, ${mix(from.top, to.top, eased)}px, 0)`;
+    mascot.style.width = width + 'px';
+    mascot.style.transform = `translate3d(${mix(from.right, to.right, eased) - width}px, ${top}px, 0)`;
     mascot.style.setProperty('--wave-angle', Math.sin(scrollY / 125) * 9 + 'deg');
     mascot.style.setProperty('--dna-angle', Math.sin(scrollY / 320) * 8 + 'deg');
     mascot.style.setProperty('--dock-progress', eased);
@@ -59,4 +68,47 @@
   addEventListener('pageshow', requestRender);
   reducedMotion.addEventListener('change', requestRender);
   render();
+  // Pointer movement is sampled only over the character, once per frame.
+  const hit = document.querySelector('#mascot-trigger');
+  const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
+  let pointerFrame = 0;
+  let winkTimer = 0;
+  let pointerX = 0;
+  let pointerY = 0;
+  function clearGreeting() {
+    cancelAnimationFrame(pointerFrame);
+    clearTimeout(winkTimer);
+    pointerFrame = 0;
+    mascot.classList.remove('is-curious', 'is-winking');
+    mascot.style.removeProperty('--look-x');
+    mascot.style.removeProperty('--look-y');
+  }
+  if (hit) {
+    hit.addEventListener('pointerenter', () => {
+      if (!finePointer.matches || hit.disabled) return;
+      mascot.classList.add('is-curious');
+      if (!reducedMotion.matches) {
+        mascot.classList.add('is-winking');
+        winkTimer = setTimeout(() => mascot.classList.remove('is-winking'), 190);
+      }
+    });
+    hit.addEventListener('pointermove', e => {
+      if (!finePointer.matches || reducedMotion.matches || hit.disabled) return;
+      pointerX = e.clientX;
+      pointerY = e.clientY;
+      if (!pointerFrame) pointerFrame = requestAnimationFrame(() => {
+        pointerFrame = 0;
+        const rect = hit.getBoundingClientRect();
+        const x = Math.max(-1, Math.min(1, (pointerX - rect.left) / rect.width * 2 - 1));
+        const y = Math.max(-1, Math.min(1, (pointerY - rect.top) / rect.height * 2 - 1));
+        mascot.style.setProperty('--look-x', x * 3.2 + 'px');
+        mascot.style.setProperty('--look-y', y * 2 + 'px');
+      });
+    });
+    hit.addEventListener('pointerleave', clearGreeting);
+    hit.addEventListener('pointercancel', clearGreeting);
+    hit.addEventListener('click', clearGreeting);
+    reducedMotion.addEventListener('change', clearGreeting);
+  }
+
 })();

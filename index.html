@@ -16,7 +16,8 @@
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
   <link rel="alternate icon" href="/assets/images/logo.ico">
-  <link rel="stylesheet" href="/assets/css/style.css?v=20260907-1">
+  <link rel="stylesheet" href="/assets/css/style.css?v=20260907-2">
+  <link rel="stylesheet" href="/assets/css/greenhouse.css?v=20260907-2">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -54,7 +55,7 @@
         </div>
         <div class="hero-art">
           <div class="hero-halo" aria-hidden="true"></div>
-          <div id="mascot-origin" class="mascot-origin"><div id="mascot" class="mascot" data-scene="welcome" aria-hidden="true"><svg viewBox="0 0 420 480" focusable="false"><use href="/assets/images/researcher.svg#researcher"/></svg></div></div>
+          <div id="mascot-origin" class="mascot-origin"><div id="mascot" class="mascot" data-scene="welcome"><button id="mascot-trigger" class="mascot-hit" type="button" aria-label="Open a tiny pea genetics experiment" aria-haspopup="dialog" aria-controls="pocket-greenhouse" disabled><svg viewBox="0 0 420 480" focusable="false" aria-hidden="true"><use href="/assets/images/researcher.svg?v=20260907-2#researcher"/></svg></button><span class="mascot-invite" aria-hidden="true">One tiny experiment?</span></div></div>
           <p class="scroll-note">Keep asking. Keep exploring. <span aria-hidden="true">↓</span></p>
         </div>
       </div>
@@ -130,6 +131,69 @@
     </section>
     <section id="contact" class="chapter-contact" data-scene="contact" aria-labelledby="contact-title"><div class="wrap"><p class="eyebrow">Get in touch</p><h2 id="contact-title">Let’s compare notes.</h2><p>On genomics, scientific software, or the next questions in AI for biology.</p><a class="contact-email" href="mailto:define@define.sh">define@define.sh <span aria-hidden="true">↗</span></a><footer class="site-footer"><p>© 2026 Cong Feng <span lang="zh">奉聪</span></p><div><a href="https://github.com/fengcong3">GitHub</a><a href="#top">Back to top <span aria-hidden="true">↑</span></a></div></footer></div></section>
   </main>
-  <script src="/assets/js/story.js?v=20260907-1" defer></script>
+  <dialog id="pocket-greenhouse" class="greenhouse" aria-labelledby="greenhouse-title" aria-describedby="greenhouse-intro">
+    <div class="lab-topbar"><span class="eyebrow">A pocket greenhouse</span><button type="button" class="lab-close" aria-label="Close the greenhouse" autofocus>×</button></div>
+    <div class="lab-heading"><h2 id="greenhouse-title">Let curiosity <em>grow.</em></h2><p id="greenhouse-intro">Two pea plants. A little inheritance. What might grow?</p></div>
+    <div class="lab-body">
+      <div class="lab-scene">
+        <svg class="lab-garden" viewBox="0 0 500 480" aria-hidden="true">
+          <defs>
+            <radialGradient id="lab-seed-fill" cx=".32" cy=".25" r=".8"><stop style="stop-color:var(--seed-light,#f4e3a5)"/><stop offset=".55" style="stop-color:var(--seed-base,#dcc16f)"/><stop offset="1" style="stop-color:var(--seed-dark,#ae9146)"/></radialGradient>
+            <linearGradient id="lab-leaf-fill"><stop stop-color="#b5c795"/><stop offset="1" stop-color="#6d946b"/></linearGradient>
+          </defs>
+          <path d="M63 419V198a184 184 0 0 1 368 0v221Z" fill="#e7eddd"/>
+          <g fill="none" stroke="#bdcbb2" stroke-width="1" opacity=".65"><path d="M247 15v403M78 154h338M63 292h368M135 58v359M359 53v365"/></g>
+          <ellipse cx="249" cy="427" rx="180" ry="12" fill="#d7dfcb"/>
+          <g class="lab-plant">
+            <path class="lab-stem" d="M241 418C251 370 233 332 246 284C253 255 243 230 228 211M244 353Q201 325 184 288M248 308Q282 296 302 265" fill="none" stroke="#64865d" stroke-width="5" stroke-linecap="round"/>
+            <g class="lab-leaves" fill="url(#lab-leaf-fill)" stroke="#769362" stroke-width="1.5">
+              <path d="M244 372Q181 373 157 329Q213 314 244 372Z"/>
+              <path d="M243 360Q263 312 309 326Q289 369 243 360Z"/>
+              <path d="M245 306Q195 307 178 267Q225 259 245 306Z"/>
+              <path d="M250 282Q263 239 305 239Q298 278 250 282Z"/>
+              <path d="M234 228Q198 234 183 204Q215 188 234 228Z"/>
+            </g>
+            <g fill="none" stroke="#cad6a8" stroke-width="1.4"><path d="M164 334 239 368M249 356l52-25M184 272l54 30M254 277l45-33M191 207l38 18"/></g>
+            <path d="M229 212C213 193 224 175 237 184C250 197 231 204 231 193M303 265C325 252 337 267 327 277C318 285 311 273 321 272" fill="none" stroke="#809c6c" stroke-width="2" stroke-linecap="round"/>
+            <path d="M177 283Q149 313 169 337Q193 318 184 285Z" fill="#85a66d" stroke="#628654" stroke-width="1.5"/>
+            <path d="M178 290Q161 315 170 330" fill="none" stroke="#c5d99d" stroke-width="2"/>
+          </g>
+          <path d="M301 275 335 246" fill="none" stroke="#c1ac73" stroke-dasharray="3 6" stroke-width="1.5"/>
+          <g class="lab-seed-view">
+            <circle cx="335" cy="186" r="85" fill="#f9f6e9" stroke="#d8d6bc" stroke-width="1.5"/>
+            <circle class="lab-seed" cx="335" cy="181" r="53" fill="url(#lab-seed-fill)" stroke="#a89d5c" stroke-width="1.5"/>
+            <path d="M303 165Q308 148 327 143" fill="none" stroke="#fff9ce" stroke-width="4" opacity=".55" stroke-linecap="round"/>
+            <text id="lab-seed-label" x="335" y="252" text-anchor="middle">a possibility</text>
+          </g>
+          <g class="lab-pollen" fill="#d8bd70"><circle cx="290" cy="97" r="3"/><circle cx="425" cy="158" r="3"/><path d="m394 86 2 7 7 2-7 2-2 7-2-7-7-2 7-2Z"/><circle cx="401" cy="269" r="2"/></g>
+          <svg class="lab-guide" x="27" y="272" width="147" height="168" viewBox="0 0 420 480"><use href="/assets/images/researcher.svg?v=20260907-2#researcher"/></svg>
+        </svg>
+        <div class="lab-result" role="status" aria-live="polite" aria-atomic="true"><p id="lab-result-title">Ready when you are.</p><p id="lab-result-detail">Choose your parents, then grow a pea.</p></div>
+      </div>
+      <div class="lab-controls">
+        <div class="lab-parents">
+          <fieldset data-parent="a"><legend>Parent one</legend><div class="parent-options">
+            <label class="parent-option"><input type="radio" name="pea-parent-a" value="YY"><span>YY<small>yellow</small></span></label>
+            <label class="parent-option"><input type="radio" name="pea-parent-a" value="Yy" checked><span>Yy<small>yellow</small></span></label>
+            <label class="parent-option"><input type="radio" name="pea-parent-a" value="yy"><span>yy<small>green</small></span></label>
+          </div></fieldset>
+          <span class="cross-sign" aria-hidden="true">×</span>
+          <fieldset data-parent="b"><legend>Parent two</legend><div class="parent-options">
+            <label class="parent-option"><input type="radio" name="pea-parent-b" value="YY"><span>YY<small>yellow</small></span></label>
+            <label class="parent-option"><input type="radio" name="pea-parent-b" value="Yy" checked><span>Yy<small>yellow</small></span></label>
+            <label class="parent-option"><input type="radio" name="pea-parent-b" value="yy"><span>yy<small>green</small></span></label>
+          </div></fieldset>
+        </div>
+        <div class="lab-prediction"><p class="lab-caption">Chances for each offspring</p><div class="probability-bar" aria-hidden="true"><span id="yellow-probability-bar"></span></div><p class="probability-labels"><span id="yellow-probability">Yellow 75%</span><span id="green-probability">Green 25%</span></p></div>
+        <button type="button" class="lab-grow">Grow a pea <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V11m0 4C3 15 2 8 3 5c7 0 10 4 9 10Zm0-4c0-6 4-9 9-9 1 5-3 9-9 9Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="lab-harvest"><div class="harvest-heading"><p class="lab-caption">Your little harvest</p><button type="button" class="lab-reset" disabled>Clear</button></div><div id="harvest-seeds" aria-hidden="true"></div><p id="harvest-count">No peas yet. Every draw is a fresh chance.</p></div>
+        <p class="lab-explanation">One allele comes from each parent. <strong>Y</strong> gives yellow seed colour; green appears with <strong>yy</strong>.</p>
+      </div>
+    </div>
+    <footer class="lab-footer"><span>A playful, single-gene model. New parents start a fresh harvest.</span><a href="https://openstax.org/books/biology/pages/12-2-characteristics-and-traits" target="_blank" rel="noopener noreferrer">The genetics ↗</a></footer>
+  </dialog>
+
+  <script src="/assets/js/story.js?v=20260907-2" defer></script>
+  <script src="/assets/js/greenhouse.js?v=20260907-2" defer></script>
 </body>
 </html>

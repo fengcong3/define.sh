@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://define.sh/sitemap.xml
-Sitemap: https://define.sh/AI/sitemap.xml

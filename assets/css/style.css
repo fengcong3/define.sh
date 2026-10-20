@@ -98,10 +98,11 @@ h1 { font-size:clamp(4.75rem,6.5vw,9rem); line-height:1.05; letter-spacing:-.065
 .publication { min-width:0; background:var(--paper); border:1px solid #ccd4c2; }
 .featured-publication { display:grid; grid-template-columns:minmax(0,1.02fr) minmax(0,1fr); grid-column:1/-1; }
 .paper-visual { min-width:0; background:#e4eadc; }
-.paper-visual > svg { width:100%; height:auto; }
+.paper-image-frame { position:relative; width:100%; min-width:0; aspect-ratio:760/280; background:#fff; --figure-inset:clamp(.65rem,.8vw,1rem); }
+.paper-image { position:absolute; inset:0; width:100%; height:100%; padding:var(--figure-inset); object-fit:contain; }
 .featured-publication .paper-visual { display:flex; flex-direction:column; justify-content:center; border-right:1px solid #ccd4c2; }
 .figure-topline { display:flex; flex-wrap:wrap; justify-content:space-between; gap:1rem; padding:.85rem 1rem; color:#eef2e5; background:#203c32; font:var(--font-caption)/1.5 var(--mono); text-transform:uppercase; letter-spacing:.09em; }
-.featured-publication .paper-visual > svg { margin-block:auto; }
+.featured-publication .paper-image-frame { flex:1; aspect-ratio:820/530; }
 .publication-content { padding:1.65rem; display:flex; flex-direction:column; min-width:0; }
 .publication-meta { display:flex; flex-wrap:wrap; align-items:baseline; gap:.6rem; color:var(--green); font:var(--font-caption)/1.5 var(--mono); margin-bottom:1rem; }
 .journal { font:italic var(--font-item-title)/1.4 var(--serif); }

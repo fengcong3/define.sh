@@ -3,3 +3,5 @@ Thumbs.db
 **/output/
 __pycache__/
 node_modules/
+# Local reference papers; publish only the extracted web figures.
+/*.pdf

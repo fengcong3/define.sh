@@ -1,0 +1,20 @@
+/* Reading sizes follow the CSS viewport, never the display's physical pixels or DPR.
+   A rem component keeps browser default-font and zoom preferences effective.
+   --type-unit is 1rem and respects the user's browser default font size. */
+:root {
+  --type-unit: 1rem;
+  --font-body: clamp(var(--type-unit), calc(.96875 * var(--type-unit) + .25vw), calc(1.375 * var(--type-unit)));
+  --font-secondary: clamp(calc(.9375 * var(--type-unit)), calc(.915 * var(--type-unit) + .14vw), calc(1.1875 * var(--type-unit)));
+  --font-caption: clamp(calc(.875 * var(--type-unit)), calc(.8525 * var(--type-unit) + .11vw), calc(1.0625 * var(--type-unit)));
+  --font-item-title: clamp(1.0625rem, calc(1rem + .12vw), 1.25rem);
+  --font-subheading: clamp(1.125rem, calc(1.05rem + .3vw), 1.625rem);
+  --font-section-title: clamp(1.75rem, calc(1.5rem + .3vw), 2rem);
+  --font-card-title: clamp(1.75rem, calc(1.45rem + .55vw), 2.3125rem);
+  --font-feature-title: clamp(1.5rem, calc(1.3rem + .4vw), 2.125rem);
+  --font-path-title: clamp(1.375rem, calc(1.2rem + .35vw), 1.625rem);
+  --font-genotype: clamp(1.125rem, calc(1rem + .25vw), 1.5rem);
+  --leading-body: 1.7;
+  --leading-secondary: 1.65;
+  --leading-caption: 1.5;
+  --measure-body: 62ch;
+}

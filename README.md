@@ -38,7 +38,7 @@ The owner requested removal of the open-notebook section, both blog links, the A
 
 Publications are static, crawlable HTML: the three selected entries are followed by four further publications in a native disclosure. Preserve author ordering, DOI links, and collaborator credits when editing. Update visible biographical text and JSON-LD together.
 
-Facts were retained from the previous homepage, the companion profile and the PDFs already in `cv/`. The HKU appointment (Research Assistant, late January 2026–present) was supplied by the owner. The exact end date of the preceding CAAS appointment was not supplied, so that entry shows its known start date and identifies it as a previous appointment. AI/agentic science is presented as an interest, without implying published results or a specific HKU project.
+Facts were retained from the previous homepage, the companion profile and the PDFs already in `cv/`. The owner confirmed the CAAS appointment as July 2019–January 2026 and the HKU appointment (Research Assistant) as late January 2026–present. AI/agentic science is presented as an interest, without implying published results or a specific HKU project.
 
 The two CV PDFs are historical documents and remain unchanged. The CV page labels their dates explicitly. Research portal contributions are described using the existing CV; the original homepage’s website-creation credit to Zejian Huang is preserved for WWWG2B and Mendel Pea G2P. Older personal details and awards remain available in the CV archive.
 

@@ -30,6 +30,22 @@ Then open `http://127.0.0.1:8000/`. Asset paths start at `/` to support the cust
 
 ## Editing content
 
+### Production colours
+
+The published website has two palettes: **青瓷灰蓝** (`slate`) and **原版松绿**
+(`original`). On each page load, including a refresh, `assets/js/theme.js` chooses
+one with 50% probability before styles load. Choices are independent; successive
+visits can show the same palette. Previous browser colour preferences are ignored.
+
+`assets/css/themes.css` contains only these two palettes. Text, backgrounds,
+borders, diagram colours, the character's clothing, tables and the greenhouse UI
+share their colour roles. Plant phenotype colours and original paper figures keep
+their scientific meaning. Without JavaScript, the page uses 青瓷灰蓝.
+
+The trial palette picker and the other colour studies are excluded from production.
+Their local sources are archived under ignored `output/playwright/palette-studies/`.
+The compiled `AI/` guide remains independent.
+
 Edit `index.html` directly. All substantive content remains available without JavaScript; the character illustration is decorative, while its enabled button has an accessible name. Without JavaScript the button stays disabled and the experiment stays hidden. The haplotype matrix contains explicitly labelled illustrative samples, not research results.
 
 The pocket greenhouse is a playful, single-gene model of pea seed colour ([OpenStax reference](https://openstax.org/books/biology/pages/12-2-characteristics-and-traits)). Each parent contributes either allele with equal probability; the four combinations determine the displayed phenotype probabilities. A draw samples one combination independently. Changing parents clears the harvest, and only the latest twelve seeds are drawn while counts cover the current cross. This educational interaction does not represent personal research results. It has no remote service, saved data or additional dependencies.

@@ -11,76 +11,76 @@
     <g id="atlas-pod" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <path d="M-102 18C-56-22 38-29 101-11C70 25-32 48-102 18Z" fill="currentColor" fill-opacity=".13" stroke="currentColor" stroke-width="2"/>
       <path d="M-99 17C-38 1 30-13 96-10M-90 23C-37 38 42 23 91-6" stroke="currentColor" stroke-width="1"/>
-      <g fill="#f8f7f2" stroke="currentColor" stroke-width="1.6"><circle cx="-68" cy="17" r="12"/><circle cx="-36" cy="11" r="14"/><circle cx="0" cy="4" r="15"/><circle cx="36" cy="-1" r="14"/><circle cx="67" cy="-5" r="11"/></g>
+      <g fill="var(--paper,#f8f7f2)" stroke="currentColor" stroke-width="1.6"><circle cx="-68" cy="17" r="12"/><circle cx="-36" cy="11" r="14"/><circle cx="0" cy="4" r="15"/><circle cx="36" cy="-1" r="14"/><circle cx="67" cy="-5" r="11"/></g>
       <path d="m98-11 13-12 11-2M111-23c-18-16-25-30-19-40 16 4 22 20 19 40Zm1-1c9-14 23-21 34-15-3 15-19 20-34 15ZM121-24c10-12 4-27-6-24-9 3-3 14 3 10" stroke="currentColor" stroke-width="1.6"/>
     </g>
     <g id="atlas-haplotypes">
-      <g fill="#315c45"><path d="M0 0h30v14H0zM34 0h30v14H34zM0 20h30v14H0zM34 20h30v14H34zM102 40h30v14h-30zM136 40h30v14h-30zM102 60h30v14h-30zM136 60h30v14h-30z"/></g>
-      <g fill="#a4b79a"><path d="M102 0h30v14h-30zM136 0h30v14h-30zM102 20h30v14h-30zM136 20h30v14h-30zM0 40h30v14H0zM34 40h30v14H34zM0 60h30v14H0zM34 60h30v14H34z"/></g>
-      <path d="M68 0h30v14H68zM68 20h30v14H68zM68 40h30v14H68zM68 60h30v14H68zM170 0h30v14h-30zM170 20h30v14h-30zM170 40h30v14h-30zM170 60h30v14h-30z" fill="#c4a15d"/>
+      <g fill="var(--plot-primary,#315c45)"><path d="M0 0h30v14H0zM34 0h30v14H34zM0 20h30v14H0zM34 20h30v14H34zM102 40h30v14h-30zM136 40h30v14h-30zM102 60h30v14h-30zM136 60h30v14h-30z"/></g>
+      <g fill="var(--plot-soft,#a4b79a)"><path d="M102 0h30v14h-30zM136 0h30v14h-30zM102 20h30v14h-30zM136 20h30v14h-30zM0 40h30v14H0zM34 40h30v14H34zM0 60h30v14H0zM34 60h30v14H34z"/></g>
+      <path d="M68 0h30v14H68zM68 20h30v14H68zM68 40h30v14H68zM68 60h30v14H68zM170 0h30v14h-30zM170 20h30v14h-30zM170 40h30v14h-30zM170 60h30v14h-30z" fill="var(--plot-secondary,#c4a15d)"/>
     </g>
-    <g id="atlas-gene" fill="none" stroke="#315c45" stroke-width="2">
-      <path d="M0 0H246m-11-5 11 5-11 5"/><g fill="#315c45" stroke="none"><path d="M20-9h30V9H20zM77-9h40V9H77zM147-9h23V9h-23zM195-9h34V9h-34z"/></g>
+    <g id="atlas-gene" fill="none" stroke="var(--plot-primary,#315c45)" stroke-width="2">
+      <path d="M0 0H246m-11-5 11 5-11 5"/><g fill="var(--plot-primary,#315c45)" stroke="none"><path d="M20-9h30V9H20zM77-9h40V9H77zM147-9h23V9h-23zM195-9h34V9h-34z"/></g>
     </g>
-    <g id="atlas-wheat" fill="none" stroke="#9b7d3e" stroke-linecap="round" stroke-width="1.8">
+    <g id="atlas-wheat" fill="none" stroke="var(--gold,#9b7d3e)" stroke-linecap="round" stroke-width="1.8">
       <path d="M0 116V-90M0 84C-14 46-44 32-49 28 0 32 2 64 0 84Zm0-4c12-25 34-39 50-41-14 31-33 40-50 41Z"/>
-      <g fill="#d2bb85"><path d="M0-57c-20 0-28-18-23-31C-6-86 0-71 0-57Zm0 0c20 0 28-18 23-31C6-86 0-71 0-57ZM0-28c-23 0-32-20-26-34C-7-60 0-44 0-28Zm0 0c23 0 32-20 26-34C7-60 0-44 0-28ZM0 4c-23 0-32-20-26-34C-7-28 0-12 0 4Zm0 0c23 0 32-20 26-34C7-28 0-12 0 4ZM0 33c-21 0-29-19-24-32C-6 3 0 18 0 33Zm0 0C21 33 29 14 24 1 6 3 0 18 0 33Z"/></g>
+      <g fill="var(--plot-soft,#d2bb85)"><path d="M0-57c-20 0-28-18-23-31C-6-86 0-71 0-57Zm0 0c20 0 28-18 23-31C6-86 0-71 0-57ZM0-28c-23 0-32-20-26-34C-7-60 0-44 0-28Zm0 0c23 0 32-20 26-34C7-60 0-44 0-28ZM0 4c-23 0-32-20-26-34C-7-28 0-12 0 4Zm0 0c23 0 32-20 26-34C7-28 0-12 0 4ZM0 33c-21 0-29-19-24-32C-6 3 0 18 0 33Zm0 0C21 33 29 14 24 1 6 3 0 18 0 33Z"/></g>
       <path d="m-23-88-10-20m56 20 10-20m-59 46-11-20m63 20 11-20M-26-30l-11-20m63 20 11-20" stroke-width="1"/>
     </g>
     <symbol id="pea-atlas" viewBox="0 0 820 530">
-      <g font-family="Georgia,serif"><text x="36" y="54" class="atlas-title" fill="#203c32">My research, through peas</text><text x="784" y="54" text-anchor="end" class="atlas-meta" font-style="italic" fill="#56644f">Pisum sativum</text></g>
-      <path d="M36 82H784M36 356H784" stroke="#d0d6c6"/>
-      <g font-family="Consolas,monospace" class="atlas-label" fill="#56644f"><text x="36" y="124">01 / Genomic variation</text><text x="482" y="124">02 / Phenotype</text></g>
+      <g font-family="Georgia,serif"><text x="36" y="54" class="atlas-title" fill="var(--ink,#203c32)">My research, through peas</text><text x="784" y="54" text-anchor="end" class="atlas-meta" font-style="italic" fill="var(--muted,#56644f)">Pisum sativum</text></g>
+      <path d="M36 82H784M36 356H784" stroke="var(--line,#d0d6c6)"/>
+      <g font-family="Consolas,monospace" class="atlas-label" fill="var(--muted,#56644f)"><text x="36" y="124">01 / Genomic variation</text><text x="482" y="124">02 / Phenotype</text></g>
       <g transform="translate(52 169)">
-        <rect x="0" y="0" width="13" height="148" rx="6.5" fill="#d9dfd0"/><rect x="27" y="5" width="13" height="133" rx="6.5" fill="#d9dfd0"/><rect x="54" y="-5" width="13" height="151" rx="6.5" fill="#d9dfd0"/><rect x="81" y="15" width="13" height="127" rx="6.5" fill="#d9dfd0"/><rect x="108" y="3" width="13" height="145" rx="6.5" fill="#d9dfd0"/><rect x="135" y="9" width="13" height="128" rx="6.5" fill="#d9dfd0"/><rect x="162" y="0" width="13" height="143" rx="6.5" fill="#d9dfd0"/>
-        <path d="M1 37h11M28 93h11M55 57h11M82 71h11M109 32h11M136 103h11M163 47h11" stroke="#315c45" stroke-width="6"/>
-        <g fill="#56644f" font-family="Consolas,monospace" class="atlas-note" text-anchor="middle"><text x="7" y="166">1</text><text x="34" y="166">2</text><text x="61" y="166">3</text><text x="88" y="166">4</text><text x="115" y="166">5</text><text x="142" y="166">6</text><text x="169" y="166">7</text></g>
+        <rect x="0" y="0" width="13" height="148" rx="6.5" fill="var(--plot-track,#d9dfd0)"/><rect x="27" y="5" width="13" height="133" rx="6.5" fill="var(--plot-track,#d9dfd0)"/><rect x="54" y="-5" width="13" height="151" rx="6.5" fill="var(--plot-track,#d9dfd0)"/><rect x="81" y="15" width="13" height="127" rx="6.5" fill="var(--plot-track,#d9dfd0)"/><rect x="108" y="3" width="13" height="145" rx="6.5" fill="var(--plot-track,#d9dfd0)"/><rect x="135" y="9" width="13" height="128" rx="6.5" fill="var(--plot-track,#d9dfd0)"/><rect x="162" y="0" width="13" height="143" rx="6.5" fill="var(--plot-track,#d9dfd0)"/>
+        <path d="M1 37h11M28 93h11M55 57h11M82 71h11M109 32h11M136 103h11M163 47h11" stroke="var(--plot-primary,#315c45)" stroke-width="6"/>
+        <g fill="var(--muted,#56644f)" font-family="Consolas,monospace" class="atlas-note" text-anchor="middle"><text x="7" y="166">1</text><text x="34" y="166">2</text><text x="61" y="166">3</text><text x="88" y="166">4</text><text x="115" y="166">5</text><text x="142" y="166">6</text><text x="169" y="166">7</text></g>
       </g>
-      <path d="M240 243h184m-6-5 6 5-6 5" stroke="#98a78c" fill="none"/>
-      <g transform="translate(585 213) rotate(-8)" color="#315c45"><use href="#atlas-pod"/></g>
-      <g transform="translate(585 299) rotate(-8)" color="#ac8b42"><use href="#atlas-pod"/></g>
-      <g font-family="Consolas,monospace" class="atlas-label" fill="#56644f"><text x="712" y="211">Green</text><text x="712" y="297">Yellow</text></g>
-      <text x="36" y="385" font-family="Consolas,monospace" class="atlas-label" fill="#315c45">03 / Functional variants &amp; haplotypes</text>
+      <path d="M240 243h184m-6-5 6 5-6 5" stroke="var(--plot-line,#98a78c)" fill="none"/>
+      <g transform="translate(585 213) rotate(-8)" color="var(--phenotype-green,#315c45)"><use href="#atlas-pod"/></g>
+      <g transform="translate(585 299) rotate(-8)" color="var(--phenotype-yellow,#ac8b42)"><use href="#atlas-pod"/></g>
+      <g font-family="Consolas,monospace" class="atlas-label" fill="var(--muted,#56644f)"><text x="712" y="211">Green</text><text x="712" y="297">Yellow</text></g>
+      <text x="36" y="385" font-family="Consolas,monospace" class="atlas-label" fill="var(--plot-primary,#315c45)">03 / Functional variants &amp; haplotypes</text>
       <g transform="translate(0 38)">
-      <g font-family="Consolas,monospace" class="atlas-meta" fill="#56644f"><text x="36" y="385">Gene region / Gp · ChlG</text><text x="482" y="385">Haplotype–phenotype analysis</text></g>
-      <path d="M36 427H425" stroke="#a9b59d"/>
-      <path d="M72 417v-10h141v10" fill="none" stroke="#a78844"/><path d="M72 427h141" stroke="#c4a15d" stroke-width="6" stroke-dasharray="3 3"/>
+      <g font-family="Consolas,monospace" class="atlas-meta" fill="var(--muted,#56644f)"><text x="36" y="385">Gene region / Gp · ChlG</text><text x="482" y="385">Haplotype–phenotype analysis</text></g>
+      <path d="M36 427H425" stroke="var(--plot-line,#a9b59d)"/>
+      <path d="M72 417v-10h141v10" fill="none" stroke="var(--gold,#a78844)"/><path d="M72 427h141" stroke="var(--plot-secondary,#c4a15d)" stroke-width="6" stroke-dasharray="3 3"/>
       <use href="#atlas-gene" transform="translate(241 427) scale(.72)"/>
-      <g font-family="Consolas,monospace" class="atlas-label" fill="#56644f"><text x="36" y="458">~100 kb upstream deletion</text><text x="350" y="458">ChlG</text></g>
+      <g font-family="Consolas,monospace" class="atlas-label" fill="var(--muted,#56644f)"><text x="36" y="458">~100 kb upstream deletion</text><text x="350" y="458">ChlG</text></g>
       <use href="#atlas-haplotypes" transform="translate(482 407) scale(1.05 .75)"/>
-      <path d="M711 420h43m-6-4 6 4-6 4M711 449h43m-6-4 6 4-6 4" stroke="#98a78c" fill="none"/><circle cx="770" cy="420" r="8" fill="#315c45"/><circle cx="770" cy="449" r="8" fill="#c4a15d"/>
+      <path d="M711 420h43m-6-4 6 4-6 4M711 449h43m-6-4 6 4-6 4" stroke="var(--plot-line,#98a78c)" fill="none"/><circle cx="770" cy="420" r="8" fill="var(--plot-primary,#315c45)"/><circle cx="770" cy="449" r="8" fill="var(--plot-secondary,#c4a15d)"/>
           </g>
     </symbol>
     <symbol id="pea-locus" viewBox="0 0 820 530">
-      <g font-family="Consolas,monospace" class="atlas-meta" letter-spacing="1" fill="#56644f"><text x="36" y="35">Gene → trait / Pea</text><text x="784" y="35" text-anchor="end">Gp · ChlG</text></g>
-      <path d="M36 55H784M36 304H784" stroke="#c8d0bd"/>
-      <text x="36" y="102" font-family="Georgia,serif" class="atlas-title" fill="#203c32">A structural change. A visible trait.</text>
-      <g font-family="Consolas,monospace" class="atlas-meta" fill="#56644f"><text x="36" y="146">Upstream region</text><text x="512" y="146">Chlorophyll synthase</text></g>
-      <path d="M36 187H443M36 249H443" stroke="#a8b69b" stroke-width="1.5"/>
-      <path d="M92 176v-11h228v11" fill="none" stroke="#a6894d" stroke-width="1.5"/>
-      <path d="M92 187h228" stroke="#315c45" stroke-width="8"/><path d="M92 249h228" stroke="#c4a15d" stroke-width="8" stroke-dasharray="4 5"/>
+      <g font-family="Consolas,monospace" class="atlas-meta" letter-spacing="1" fill="var(--muted,#56644f)"><text x="36" y="35">Gene → trait / Pea</text><text x="784" y="35" text-anchor="end">Gp · ChlG</text></g>
+      <path d="M36 55H784M36 304H784" stroke="var(--line,#c8d0bd)"/>
+      <text x="36" y="102" font-family="Georgia,serif" class="atlas-title" fill="var(--ink,#203c32)">A structural change. A visible trait.</text>
+      <g font-family="Consolas,monospace" class="atlas-meta" fill="var(--muted,#56644f)"><text x="36" y="146">Upstream region</text><text x="512" y="146">Chlorophyll synthase</text></g>
+      <path d="M36 187H443M36 249H443" stroke="var(--plot-line,#a8b69b)" stroke-width="1.5"/>
+      <path d="M92 176v-11h228v11" fill="none" stroke="var(--gold,#a6894d)" stroke-width="1.5"/>
+      <path d="M92 187h228" stroke="var(--plot-primary,#315c45)" stroke-width="8"/><path d="M92 249h228" stroke="var(--plot-secondary,#c4a15d)" stroke-width="8" stroke-dasharray="4 5"/>
       <use href="#atlas-gene" transform="translate(487 187)"/><use href="#atlas-gene" transform="translate(487 249)"/>
-      <g font-family="Consolas,monospace" class="atlas-meta" fill="#56644f"><text x="36" y="282">~100 kb deletion upstream of ChlG</text><text x="512" y="282">Gene region schematic</text></g>
-      <path d="M410 315v34m-5-7 5 7 5-7" stroke="#a6894d" stroke-width="1.3" fill="none"/>
-      <g transform="translate(211 409) rotate(-8) scale(1.1)" color="#315c45"><use href="#atlas-pod"/></g>
-      <g transform="translate(595 409) rotate(-8) scale(1.1)" color="#ac8b42"><use href="#atlas-pod"/></g>
-      <g font-family="Consolas,monospace" class="atlas-meta" letter-spacing="1" fill="#56644f"><text x="211" y="470" text-anchor="middle">Green pod</text><text x="595" y="470" text-anchor="middle">Yellow pod</text></g>
+      <g font-family="Consolas,monospace" class="atlas-meta" fill="var(--muted,#56644f)"><text x="36" y="282">~100 kb deletion upstream of ChlG</text><text x="512" y="282">Gene region schematic</text></g>
+      <path d="M410 315v34m-5-7 5 7 5-7" stroke="var(--gold,#a6894d)" stroke-width="1.3" fill="none"/>
+      <g transform="translate(211 409) rotate(-8) scale(1.1)" color="var(--phenotype-green,#315c45)"><use href="#atlas-pod"/></g>
+      <g transform="translate(595 409) rotate(-8) scale(1.1)" color="var(--phenotype-yellow,#ac8b42)"><use href="#atlas-pod"/></g>
+      <g font-family="Consolas,monospace" class="atlas-meta" letter-spacing="1" fill="var(--muted,#56644f)"><text x="211" y="470" text-anchor="middle">Green pod</text><text x="595" y="470" text-anchor="middle">Yellow pod</text></g>
     </symbol>
     <symbol id="wheat-atlas" viewBox="0 0 760 280">
-      <g font-family="Consolas,monospace" class="atlas-label" letter-spacing="1" fill="#56644f"><text x="28" y="28">Population genomics / Wheat</text><text x="732" y="28" text-anchor="end">01 → 02</text></g>
-      <path d="M28 44H732" stroke="#d0d6c6"/><use href="#atlas-wheat" transform="translate(105 162) scale(.7)"/>
-      <path d="M173 144h57m-6-5 6 5-6 5" stroke="#98a78c" fill="none"/>
+      <g font-family="Consolas,monospace" class="atlas-label" letter-spacing="1" fill="var(--muted,#56644f)"><text x="28" y="28">Population genomics / Wheat</text><text x="732" y="28" text-anchor="end">01 → 02</text></g>
+      <path d="M28 44H732" stroke="var(--line,#d0d6c6)"/><use href="#atlas-wheat" transform="translate(105 162) scale(.7)"/>
+      <path d="M173 144h57m-6-5 6 5-6 5" stroke="var(--plot-line,#98a78c)" fill="none"/>
       <use href="#atlas-haplotypes" transform="translate(261 98) scale(1.2)"/>
-      <g font-family="Consolas,monospace" class="atlas-label" fill="#56644f"><text x="262" y="216">LD-based haplotype matrix</text><text x="555" y="89">Trait mapping</text></g>
-      <path d="M534 196H732M534 125H732" stroke="#c8cebf"/><path d="M534 125H732" stroke="#b59756" stroke-dasharray="3 5"/>
-      <g fill="#79916c"><circle cx="543" cy="183" r="3"/><circle cx="554" cy="165" r="3"/><circle cx="566" cy="178" r="3"/><circle cx="578" cy="155" r="3"/><circle cx="591" cy="170" r="3"/><circle cx="603" cy="181" r="3"/><circle cx="613" cy="149" r="3"/><circle cx="624" cy="130" r="3"/><circle cx="635" cy="108" r="4"/><circle cx="646" cy="141" r="3"/><circle cx="656" cy="158" r="3"/><circle cx="667" cy="175" r="3"/><circle cx="680" cy="166" r="3"/><circle cx="693" cy="183" r="3"/><circle cx="708" cy="171" r="3"/><circle cx="723" cy="180" r="3"/></g>
+      <g font-family="Consolas,monospace" class="atlas-label" fill="var(--muted,#56644f)"><text x="262" y="216">LD-based haplotype matrix</text><text x="555" y="89">Trait mapping</text></g>
+      <path d="M534 196H732M534 125H732" stroke="var(--line,#c8cebf)"/><path d="M534 125H732" stroke="var(--gold,#b59756)" stroke-dasharray="3 5"/>
+      <g fill="var(--plot-primary,#79916c)"><circle cx="543" cy="183" r="3"/><circle cx="554" cy="165" r="3"/><circle cx="566" cy="178" r="3"/><circle cx="578" cy="155" r="3"/><circle cx="591" cy="170" r="3"/><circle cx="603" cy="181" r="3"/><circle cx="613" cy="149" r="3"/><circle cx="624" cy="130" r="3"/><circle cx="635" cy="108" r="4"/><circle cx="646" cy="141" r="3"/><circle cx="656" cy="158" r="3"/><circle cx="667" cy="175" r="3"/><circle cx="680" cy="166" r="3"/><circle cx="693" cy="183" r="3"/><circle cx="708" cy="171" r="3"/><circle cx="723" cy="180" r="3"/></g>
     </symbol>
     <symbol id="tool-atlas" viewBox="0 0 760 280">
-      <g font-family="Consolas,monospace" class="atlas-label" letter-spacing="1" fill="#56644f"><text x="28" y="28">Research software / HAPPE</text><text x="732" y="28" text-anchor="end">02 → 03</text></g>
-      <path d="M28 44H732" stroke="#d0d6c6"/>
-      <use href="#atlas-gene" transform="translate(36 128) scale(.9)"/><text x="36" y="174" font-family="Consolas,monospace" class="atlas-label" fill="#56644f">Annotated variants</text>
-      <path d="M286 143h62m-7-5 7 5-7 5" stroke="#98a78c" fill="none"/>
-      <g transform="translate(382 67)"><rect x="0" y="0" width="350" height="162" fill="#f8f7f2" stroke="#c8cebf"/><path d="M0 25h350M34 25v137" stroke="#c8cebf"/><text x="12" y="17" font-family="Consolas,monospace" class="atlas-label" fill="#315c45">HAPPE / Editable Excel</text><use href="#atlas-haplotypes" transform="translate(48 48) scale(1.35)"/><g font-family="Consolas,monospace" class="atlas-note" fill="#56644f"><text x="13" y="59">A</text><text x="13" y="86">B</text><text x="13" y="113">C</text><text x="13" y="140">D</text></g></g>
+      <g font-family="Consolas,monospace" class="atlas-label" letter-spacing="1" fill="var(--muted,#56644f)"><text x="28" y="28">Research software / HAPPE</text><text x="732" y="28" text-anchor="end">02 → 03</text></g>
+      <path d="M28 44H732" stroke="var(--line,#d0d6c6)"/>
+      <use href="#atlas-gene" transform="translate(36 128) scale(.9)"/><text x="36" y="174" font-family="Consolas,monospace" class="atlas-label" fill="var(--muted,#56644f)">Annotated variants</text>
+      <path d="M286 143h62m-7-5 7 5-7 5" stroke="var(--plot-line,#98a78c)" fill="none"/>
+      <g transform="translate(382 67)"><rect x="0" y="0" width="350" height="162" fill="var(--paper,#f8f7f2)" stroke="var(--line,#c8cebf)"/><path d="M0 25h350M34 25v137" stroke="var(--line,#c8cebf)"/><text x="12" y="17" font-family="Consolas,monospace" class="atlas-label" fill="var(--plot-primary,#315c45)">HAPPE / Editable Excel</text><use href="#atlas-haplotypes" transform="translate(48 48) scale(1.35)"/><g font-family="Consolas,monospace" class="atlas-note" fill="var(--muted,#56644f)"><text x="13" y="59">A</text><text x="13" y="86">B</text><text x="13" y="113">C</text><text x="13" y="140">D</text></g></g>
     </symbol>
   </defs>
 </svg>

@@ -1,0 +1,65 @@
+/* Production palettes: slate and original only. */
+:root,
+[data-theme="slate"] {
+  --paper:#f7f9fa;
+  --ink:#26333b;
+  --muted:#596a73;
+  --accent:#3d6479;
+  --line:#d0dbe0;
+  --wash:#e9eff2;
+  --work-ground:#edf2f4;
+  --strong:#2c404b;
+  --on-strong:#f7f9fa;
+  --on-strong-muted:#d3dfe5;
+  --on-strong-accent:#d7c9a8;
+  --gold:#89734f;
+  --plot-primary:#4a7185;
+  --plot-secondary:#a28553;
+  --plot-soft:#a8bfca;
+  --plot-track:#d5e0e5;
+  --avatar-light:#a9bec9;
+  --avatar-mid:#859fac;
+  --avatar-dark:#5b7788;
+}
+[data-theme="original"] {
+  --paper:#f8f7f2;
+  --ink:#202923;
+  --muted:#52604f;
+  --accent:#315c45;
+  --line:#d0d6c7;
+  --wash:#e9eddf;
+  --work-ground:#f0f3f2;
+  --strong:#203c32;
+  --on-strong:#f8f7f2;
+  --on-strong-muted:#d9e2d1;
+  --on-strong-accent:#e2c989;
+  --gold:#a6894d;
+  --plot-primary:#315c45;
+  --plot-secondary:#ac8b42;
+  --plot-soft:#a4b79a;
+  --plot-track:#d9dfd0;
+  --avatar-light:#a0b599;
+  --avatar-mid:#849f82;
+  --avatar-dark:#64816c;
+}
+:root {
+  color-scheme:light;
+  --green:var(--accent);
+  --selection:color-mix(in srgb,var(--accent) 17%,var(--paper));
+  --strong-line:color-mix(in srgb,var(--on-strong) 28%,var(--strong));
+  --surface:color-mix(in srgb,var(--wash) 60%,var(--paper));
+  --atlas-ground:color-mix(in srgb,var(--wash) 68%,var(--paper));
+  --soft-accent:color-mix(in srgb,var(--accent) 13%,var(--paper));
+  --plot-line:color-mix(in srgb,var(--plot-primary) 40%,var(--line));
+  --matrix-secondary:color-mix(in srgb,var(--plot-secondary) 50%,var(--paper));
+  --shadow:color-mix(in srgb,var(--ink) 16%,transparent);
+  --backdrop:color-mix(in srgb,var(--strong) 78%,transparent);
+  --avatar-outline:color-mix(in srgb,var(--avatar-dark) 70%,var(--ink));
+  --avatar-trousers:color-mix(in srgb,var(--avatar-dark) 60%,var(--ink));
+  --avatar-lapel:color-mix(in srgb,var(--avatar-light) 70%,var(--paper));
+  --avatar-detail:color-mix(in srgb,var(--avatar-dark) 70%,var(--ink));
+  /* These two remain biological colours in every theme. */
+  --pea-green:#76955e;
+  --pea-yellow:#d8ba65;
+}
+.theme-sprite { position:absolute; width:0; height:0; overflow:hidden; pointer-events:none; }
